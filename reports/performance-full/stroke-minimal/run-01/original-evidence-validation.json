@@ -1,0 +1,102 @@
+[
+  {
+    "repeat": 1,
+    "browser": "Chrome/155.0.8059.79",
+    "samples": 12,
+    "uniqueDomStates": 1,
+    "uniqueRgba": 2,
+    "sequence": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "variants": [
+      {
+        "firstAtFrameLabel": 845,
+        "sourcePng": "reports/performance-full/capture-repeat-held-fonts-845/repeat-1/845.png",
+        "rgbaSha256": "91ea8a8b71e107220a78435317bd5419e1cbb15b304d19c06a1e02af5c62d19e",
+        "versusFirst": {
+          "changedPixels": 0,
+          "maxChannelError": 0,
+          "mseRgba": 0,
+          "bounds": null
+        }
+      },
+      {
+        "firstAtFrameLabel": 849,
+        "sourcePng": "reports/performance-full/capture-repeat-held-fonts-845/repeat-1/849.png",
+        "rgbaSha256": "b4d2f8978b2a24e151073decacf2b8ef282422353b55d1b41a2eecf0548b4ce9",
+        "versusFirst": {
+          "changedPixels": 5109,
+          "maxChannelError": 78,
+          "mseRgba": 1.2085061005015432,
+          "bounds": {
+            "left": 193,
+            "top": 353,
+            "right": 567,
+            "bottom": 641
+          }
+        }
+      }
+    ]
+  },
+  {
+    "repeat": 2,
+    "browser": "Chrome/155.0.8059.79",
+    "samples": 12,
+    "uniqueDomStates": 1,
+    "uniqueRgba": 2,
+    "sequence": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "variants": [
+      {
+        "firstAtFrameLabel": 845,
+        "sourcePng": "reports/performance-full/capture-repeat-held-fonts-845/repeat-2/845.png",
+        "rgbaSha256": "91ea8a8b71e107220a78435317bd5419e1cbb15b304d19c06a1e02af5c62d19e",
+        "versusFirst": {
+          "changedPixels": 0,
+          "maxChannelError": 0,
+          "mseRgba": 0,
+          "bounds": null
+        }
+      },
+      {
+        "firstAtFrameLabel": 849,
+        "sourcePng": "reports/performance-full/capture-repeat-held-fonts-845/repeat-2/849.png",
+        "rgbaSha256": "b4d2f8978b2a24e151073decacf2b8ef282422353b55d1b41a2eecf0548b4ce9",
+        "versusFirst": {
+          "changedPixels": 5109,
+          "maxChannelError": 78,
+          "mseRgba": 1.2085061005015432,
+          "bounds": {
+            "left": 193,
+            "top": 353,
+            "right": 567,
+            "bottom": 641
+          }
+        }
+      }
+    ]
+  }
+]

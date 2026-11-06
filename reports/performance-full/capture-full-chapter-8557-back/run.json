@@ -1,0 +1,19 @@
+{
+  "args": [
+    "run",
+    "reports/performance-full/capture-full-chapter-8557-back",
+    "8557",
+    "8569",
+    "8557",
+    "hold-back-listener"
+  ],
+  "compiledSha256": "0c9a906ba32bd1225253e246d37cca271feef3024626018df848953b35d8ba6c",
+  "scriptSha256": "2eb84bf84b10331b84aa1dc2a88367514640906784504a43279e4f9202b490e9",
+  "browserExecutable": "/usr/bin/chromium",
+  "start": 8557,
+  "end": 8569,
+  "preRollStart": 8557,
+  "mode": "hold-back-listener",
+  "format": "png",
+  "status": "started; summary.json required for a completed result"
+}

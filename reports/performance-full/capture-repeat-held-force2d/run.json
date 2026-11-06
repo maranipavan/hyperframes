@@ -1,0 +1,19 @@
+{
+  "args": [
+    "run",
+    "reports/performance-full/capture-repeat-held-force2d",
+    "845",
+    "857",
+    "830",
+    "hold-force2d"
+  ],
+  "compiledSha256": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+  "scriptSha256": "3134f2c994b8019a05f20c84886268d2cdc473a53687d043a46842abab29fa59",
+  "browserExecutable": "/usr/bin/chromium",
+  "start": 845,
+  "end": 857,
+  "preRollStart": 830,
+  "mode": "hold-force2d",
+  "format": "png",
+  "status": "started; summary.json required for a completed result"
+}

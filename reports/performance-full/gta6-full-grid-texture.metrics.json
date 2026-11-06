@@ -1,0 +1,33 @@
+{
+  "label": "gta6-full-grid-texture",
+  "exitCode": 0,
+  "wallSeconds": 2487.828,
+  "peakTreeRssMb": 579.86,
+  "peakCpuSeconds": 1184.7,
+  "samples": 2487,
+  "command": [
+    "node",
+    "packages/cli/dist/cli.js",
+    "render",
+    "/tmp/gta6-full-grid-texture",
+    "--output",
+    "/tmp/gta6-full-grid-texture.mp4",
+    "--fps",
+    "30",
+    "--quality",
+    "draft",
+    "--format",
+    "mp4",
+    "--workers",
+    "1",
+    "--no-browser-gpu",
+    "--experimental-fast-capture=false",
+    "--debug",
+    "--protocol-timeout",
+    "600000",
+    "--browser-timeout",
+    "120"
+  ],
+  "log": "/tmp/gta6-full-grid-texture.log",
+  "output": "/tmp/gta6-full-grid-texture.mp4"
+}

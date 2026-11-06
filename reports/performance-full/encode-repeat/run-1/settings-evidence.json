@@ -1,0 +1,61 @@
+{
+  "packages/engine/src/services/chunkEncoder.ts": [
+    "35:   SDR_CAPTURE_TO_BT709_FILTER,",
+    "36:   SDR_RGB_TO_TAGGED_BT709_FILTER,",
+    "54:   draft: { preset: \"ultrafast\", quality: 28, codec: \"h264\" as const },",
+    "108:    * @deprecated No longer used. `-avoid_negative_ts` is never passed for",
+    "306:       // `-avoid_negative_ts make_zero` near the bottom of this function",
+    "319:         args.push(\"-bf\", \"0\");",
+    "350:         args.push(\"-bf\", \"0\");",
+    "354:       // aq-mode=3 redistributes bits to dark flat areas (gradients).",
+    "370:           : \"colorprim=bt709:transfer=bt709:colormatrix=bt709\";",
+    "375:         args.push(xParamsFlag, joinParams(\"aq-mode=3\", colorParams, gopParams));",
+    "379:           joinParams(\"aq-mode=3\", \"aq-strength=0.8\", \"deblock=1,1\", colorParams, gopParams),",
+    "415:     args.push(\"-vf\", SDR_RGB_TO_TAGGED_BT709_FILTER);",
+    "464:     const sdrFilter = options.hdr ? undefined : SDR_CAPTURE_TO_BT709_FILTER;",
+    "496:     args.push(\"-video_track_timescale\", \"90000\");",
+    "503:   args.push(\"-avoid_negative_ts\", \"make_zero\");",
+    "817:   // No `-avoid_negative_ts` here, in any mode. ffmpeg's default is `auto`,",
+    "967:   // and no `-avoid_negative_ts`, which would drop the AAC priming (#3487)."
+  ],
+  "packages/engine/src/services/streamingEncoder.ts": [
+    "43:   SDR_CAPTURE_TO_BT709_FILTER,",
+    "44:   SDR_RGB_TO_TAGGED_BT709_FILTER,",
+    "333:         args.push(\"-bf\", \"0\");",
+    "356:         args.push(\"-bf\", \"0\");",
+    "368:           : \"colorprim=bt709:transfer=bt709:colormatrix=bt709\";",
+    "371:         args.push(xParamsFlag, `aq-mode=3:${colorParams}${gopParams}`);",
+    "373:         args.push(xParamsFlag, `aq-mode=3:aq-strength=0.8:deblock=1,1:${colorParams}${gopParams}`);",
+    "391:     args.push(\"-vf\", SDR_RGB_TO_TAGGED_BT709_FILTER);",
+    "432:           ? SDR_RGB_TO_TAGGED_BT709_FILTER",
+    "433:           : SDR_CAPTURE_TO_BT709_FILTER;",
+    "451:     args.push(\"-video_track_timescale\", \"90000\");",
+    "460:   args.push(\"-avoid_negative_ts\", \"make_zero\");"
+  ],
+  "packages/engine/src/utils/sdrCaptureColor.ts": [
+    "1: export const SDR_RGB_TO_BT709_FILTER = \"scale=out_color_matrix=bt709:out_range=tv:flags=neighbor\";",
+    "3: export const SDR_RGB_TO_TAGGED_BT709_FILTER = `${SDR_RGB_TO_BT709_FILTER},setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709:range=tv`;",
+    "5: export const SDR_CAPTURE_TO_BT709_FILTER = `scale=in_color_matrix=bt601:in_range=pc:flags=neighbor+accurate_rnd,format=gbrp,${SDR_RGB_TO_TAGGED_BT709_FILTER}`;"
+  ],
+  "packages/engine/src/utils/renderProvenance.ts": [],
+  "packages/producer/src/services/renderOrchestrator.ts": [
+    "1457:   /** Why `enabled` is what it is. Logged as `reason` on the streaming-encode gate line. */",
+    "2978:     log.info(\"[Render] Pipeline started\", {",
+    "3466:     // capture_strategy telemetry site. `resolveConfig` couldn't see",
+    "4117:     log.info(\"streaming-encode gate\", {",
+    "4304:       // Recorded here rather than beside the streaming-encode gate log: this",
+    "4327:     observability.checkpoint(\"capture_strategy\", \"resolved\", {",
+    "4507:               streamingEncoderOptions: {",
+    "4610:                 streamingEncoderOptions: {"
+  ],
+  "reports/performance-full/workers/w1-1.log": [
+    "12: [INFO] [Render] Pipeline started {\"renderJobId\":\"34924e85-649b-4baa-867b-834a88350af2\",\"platform\":\"linux\",\"arch\":\"arm64\",\"nodeVersion\":\"v22.23.3\",\"fps\":{\"num\":30,\"den\":1},\"format\":\"mp4\",\"quality\":\"draft\",\"browserGpuMode\":\"software\",\"forceScreenshot\":true,\"protocolTimeout\":60000,\"browserTimeout\":120000,\"pageNavigationTimeout\":120000,\"playerReadyTimeout\":45000}",
+    "46: [INFO] streaming-encode gate {\"renderJobId\":\"34924e85-649b-4baa-867b-834a88350af2\",\"enabled\":true,\"reason\":\"single_worker\",\"configFlag\":true,\"durationCapEnabled\":false,\"outputFormat\":\"mp4\",\"workerCount\":1,\"durationSeconds\":30,\"maxDurationSeconds\":240}",
+    "47: [INFO] [Render:trace] {\"renderJobId\":\"34924e85-649b-4baa-867b-834a88350af2\",\"phase\":\"capture_strategy\",\"status\":\"checkpoint\",\"elapsedMs\":3702,\"message\":\"resolved\",\"workerCount\":1,\"forceScreenshot\":true,\"captureBeyondViewport\":null,\"useStreamingEncode\":true,\"useLayeredComposite\":false,\"usePageSideCompositing\":false,\"hasHdrContent\":false,\"hasShaderTransitions\":false,\"isPngSequence\":false}"
+  ],
+  "reports/performance-full/workers/w1-2.log": [
+    "12: [INFO] [Render] Pipeline started {\"renderJobId\":\"3fe2a786-17eb-4fdc-9aaa-5c57a7b02e5a\",\"platform\":\"linux\",\"arch\":\"arm64\",\"nodeVersion\":\"v22.23.3\",\"fps\":{\"num\":30,\"den\":1},\"format\":\"mp4\",\"quality\":\"draft\",\"browserGpuMode\":\"software\",\"forceScreenshot\":true,\"protocolTimeout\":60000,\"browserTimeout\":120000,\"pageNavigationTimeout\":120000,\"playerReadyTimeout\":45000}",
+    "46: [INFO] streaming-encode gate {\"renderJobId\":\"3fe2a786-17eb-4fdc-9aaa-5c57a7b02e5a\",\"enabled\":true,\"reason\":\"single_worker\",\"configFlag\":true,\"durationCapEnabled\":false,\"outputFormat\":\"mp4\",\"workerCount\":1,\"durationSeconds\":30,\"maxDurationSeconds\":240}",
+    "47: [INFO] [Render:trace] {\"renderJobId\":\"3fe2a786-17eb-4fdc-9aaa-5c57a7b02e5a\",\"phase\":\"capture_strategy\",\"status\":\"checkpoint\",\"elapsedMs\":3666,\"message\":\"resolved\",\"workerCount\":1,\"forceScreenshot\":true,\"captureBeyondViewport\":null,\"useStreamingEncode\":true,\"useLayeredComposite\":false,\"usePageSideCompositing\":false,\"hasHdrContent\":false,\"hasShaderTransitions\":false,\"isPngSequence\":false}"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "sourcePath": "reports/performance-full/repro/texture/index.html",
+  "sourceSha256": "9728753a8498bd1c878cc7c4b067be9c751df97ebf0a810a4379cfaa431bd4ae",
+  "base": "texture",
+  "duration": 600,
+  "candidateSha256": "b7924a72c79b1799e5402b75e0cc906827c25380090bffc38798dee84a84bba4",
+  "hookSha256": "74db70b4c11d036dba7ff83a28b975fc81b9be3be80f19575602cc08fd274d8d",
+  "assets": {
+    "voiceover.mp3": "6f9bd4414fa01eeafb2aad4559b5ef2c0cfb32cfafe835a7395ec3f69865e60f",
+    "music_bed.mp3": "bd39f435e965ae60c2d6c6112e4750dedcd20b3a7f630dc2b47b8a170d996c04"
+  },
+  "scope": "Experimental capture-only active chapter layout reset; original scripts and audio tags unchanged. No renderer default changes."
+}

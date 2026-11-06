@@ -1,0 +1,19 @@
+{
+  "args": [
+    "run",
+    "reports/performance-full/capture-repeat-held-listener",
+    "845",
+    "857",
+    "830",
+    "hold-listener"
+  ],
+  "compiledSha256": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+  "scriptSha256": "dad0da74974cb16c736acd78f8a6ddc94be13f0b642f9e580f0821898dea4b33",
+  "browserExecutable": "/usr/bin/chromium",
+  "start": 845,
+  "end": 857,
+  "preRollStart": 830,
+  "mode": "hold-listener",
+  "format": "png",
+  "status": "started; summary.json required for a completed result"
+}

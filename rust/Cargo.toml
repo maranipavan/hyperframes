@@ -1,0 +1,8 @@
+[workspace]
+members = ["crates/hf-media-kernels", "crates/hf-node"]
+resolver = "3"
+
+[profile.release]
+codegen-units = 1
+lto = "thin"
+panic = "abort"

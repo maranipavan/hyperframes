@@ -1,0 +1,21 @@
+{
+  "command": [
+    "node",
+    "packages/cli/dist/cli.js",
+    "check",
+    "reports/performance-full/texture-stability-full",
+    "--json"
+  ],
+  "exitCode": 0,
+  "timedOut": false,
+  "wallSeconds": 10.526761716231704,
+  "reapedUserCpuSeconds": 14.94984,
+  "reapedSystemCpuSeconds": 1.971251,
+  "reapedCpuPercentOneCore": 160.74355491403006,
+  "sampledProcessCpuSecondsLowerBound": 16.07,
+  "sampledPeakRssSumMiB": 1449.7265625,
+  "rssCaveat": "PPID tree including reparented known children; summed RSS double-counts shared pages; 500ms samples miss transient peaks",
+  "cpuCaveat": "rusage includes reaped child descendants; sampled CPU is a separate lower bound including discovered processes",
+  "peakLiveProcessCount": 9,
+  "samples": 22
+}

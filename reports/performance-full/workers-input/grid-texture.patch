@@ -1,0 +1,11 @@
+--- a/gta6_countdown_10min.html
++++ b/gta6_countdown_10min.grid-texture.html
+@@ -13,7 +13,7 @@
+     .orb { position: absolute; width: 1100px; height: 1100px; border-radius: 50%; pointer-events: none; }
+     #orb1 { top: -420px; left: 900px; background: radial-gradient(circle, rgba(255,122,156,.17), transparent 62%); }
+     #orb2 { bottom: -560px; left: -320px; background: radial-gradient(circle, rgba(255,170,60,.12), transparent 62%); }
+-    .grid { position: absolute; inset: 0; opacity: .16; background-image: linear-gradient(rgba(148,163,184,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,.13) 1px, transparent 1px); background-size: 64px 64px; mask-image: linear-gradient(to bottom, black, transparent 92%); }
++    .grid { position: absolute; inset: 0; opacity: .16; background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2764%27 height=%2764%27 viewBox=%270 0 64 64%27%3E%3Cpath d=%27M0 .5H64M.5 0V64%27 stroke=%27rgb(148 163 184 / .13)%27 stroke-width=%271%27/%3E%3C/svg%3E"); background-size: 64px 64px; mask-image: linear-gradient(to bottom, black, transparent 92%); }
+     .topbar { position: absolute; top: 52px; left: 72px; right: 72px; display: flex; align-items: center; justify-content: space-between; z-index: 30; color: #aab5c8; font-size: 19px; letter-spacing: .12em; text-transform: uppercase; }
+     .brand { display: flex; align-items: center; gap: 14px; font-weight: 750; color: #edf4ff; }
+     .brand-mark { width: 14px; height: 14px; border-radius: 4px; background: #ff7a9c; box-shadow: 0 0 24px rgba(255,122,156,.55); }

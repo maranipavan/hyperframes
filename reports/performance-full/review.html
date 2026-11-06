@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GTA6 full-export comparison — approval pending</title>
+    <style>
+      body {
+        margin: 24px;
+        font: 17px system-ui;
+        color: #eef3fa;
+        background: #131925;
+      }
+      main {
+        max-width: 1500px;
+        margin: auto;
+      }
+      .pair {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+      video,
+      img {
+        width: 100%;
+        background: black;
+      }
+      button {
+        padding: 10px 16px;
+        margin: 4px;
+        cursor: pointer;
+      }
+      label {
+        display: block;
+        margin: 16px 0;
+      }
+      input {
+        width: min(80vw, 900px);
+      }
+      p {
+        line-height: 1.5;
+      }
+      @media (max-width: 750px) {
+        .pair {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Original motion vs grid-texture candidate</h1>
+      <p>
+        <strong>Human approval pending.</strong> Both videos are complete 600-second, 18,000-frame
+        exports. Only the grid texture changed; timeline code and both audio inputs are unchanged.
+        This page does not save or imply approval.
+      </p>
+      <div class="pair">
+        <section>
+          <h2>Original — 51m08s export</h2>
+          <video id="baseline" preload="metadata" controls src="outputs/baseline.mp4"></video>
+        </section>
+        <section>
+          <h2>Candidate — 41m28s export</h2>
+          <video
+            id="candidate"
+            preload="metadata"
+            controls
+            muted
+            src="outputs/grid-texture.mp4"
+          ></video>
+        </section>
+      </div>
+      <p>
+        Candidate audio is muted to avoid doubled playback. Decoded audio hashes match across both
+        outputs. Visual metrics are not a substitute for review.
+      </p>
+      <button id="play" type="button">Play both</button
+      ><button id="pause" type="button">Pause both</button>
+      <button type="button" data-time="28.08">First chapter seam</button>
+      <button type="button" data-time="89.533333">Worst SSIM frame</button>
+      <button type="button" data-time="312.2">Worst PSNR frame</button>
+      <button type="button" data-time="388.733333">Calendar</button>
+      <button type="button" data-time="599">Final second</button>
+      <label
+        >Seek both <input id="seek" type="range" min="0" max="599.966667" step="0.033333" value="0"
+      /></label>
+      <output id="position">0.000 s</output>
+      <h2>Lossless raw screenshots at the worst encoded-PSNR time</h2>
+      <p>
+        Original / candidate below. Raw sample RGB differences never exceeded one code value across
+        73 samples; lossy MP4 differences can be larger.
+      </p>
+      <div class="pair">
+        <img src="raw-visual/9366-baseline.png" alt="Original lossless frame at 312.2 seconds" />
+        <img src="raw-visual/9366-texture.png" alt="Candidate lossless frame at 312.2 seconds" />
+      </div>
+    </main>
+    <script>
+      const baseline = document.getElementById("baseline");
+      const candidate = document.getElementById("candidate");
+      const seek = document.getElementById("seek");
+      const position = document.getElementById("position");
+      function seekBoth(time) {
+        baseline.pause();
+        candidate.pause();
+        baseline.currentTime = time;
+        candidate.currentTime = time;
+        seek.value = String(time);
+        position.textContent = `${time.toFixed(3)} s`;
+      }
+      seek.addEventListener("input", () => seekBoth(Number(seek.value)));
+      for (const button of document.querySelectorAll("[data-time]")) {
+        button.addEventListener("click", () => seekBoth(Number(button.dataset.time)));
+      }
+      document.getElementById("play").addEventListener("click", async () => {
+        candidate.currentTime = baseline.currentTime;
+        try {
+          await Promise.all([baseline.play(), candidate.play()]);
+        } catch (error) {
+          position.textContent = `Playback failed: ${error.message}`;
+        }
+      });
+      document.getElementById("pause").addEventListener("click", () => {
+        baseline.pause();
+        candidate.pause();
+      });
+      baseline.addEventListener("timeupdate", () => {
+        position.textContent = `${baseline.currentTime.toFixed(3)} s`;
+        seek.value = String(baseline.currentTime);
+        if (!baseline.paused && Math.abs(candidate.currentTime - baseline.currentTime) > 0.12) {
+          candidate.currentTime = baseline.currentTime;
+        }
+      });
+    </script>
+  </body>
+</html>

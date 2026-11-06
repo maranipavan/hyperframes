@@ -1,0 +1,14 @@
+{
+  "aPath": "reports/performance-full/capture-full-chapter-14167-forward",
+  "bPath": "reports/performance-full/capture-full-chapter-14167-back",
+  "comparedFrames": 1,
+  "results": [
+    {
+      "frame": 14167,
+      "pixelsEqual": true,
+      "stateEqual": true
+    }
+  ],
+  "gatePassed": true,
+  "note": "Compares recorded RGBA/state hashes of repeat-1 over shared absolute frames; verify each input separately."
+}

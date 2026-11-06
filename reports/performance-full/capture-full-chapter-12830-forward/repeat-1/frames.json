@@ -1,0 +1,1536 @@
+{
+  "repeat": 1,
+  "browser": "Chrome/155.0.8059.79",
+  "stabilityStats": {
+    "seeks": 16,
+    "resets": 128
+  },
+  "captureMode": "screenshot",
+  "captureBeyondViewport": false,
+  "frames": [
+    {
+      "frame": 12830,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12831,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12832,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12833,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12834,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12835,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12836,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12837,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12838,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12839,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12840,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    },
+    {
+      "frame": 12841,
+      "seekFrame": 12830,
+      "captureSha256": "21f39719d0139cc3aa8a4dbdae60a32710e55e3c72c354406799ca71a5c8681b",
+      "rgbaSha256": "e62dd7ec0995b493c193de9497a370a28ca4395fe83267dbd4aa0dae5b6415b5",
+      "state": [
+        {
+          "id": "s3",
+          "className": "clip scene",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "none",
+          "opacity": "0",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "scene-inner chapter",
+          "rect": [
+            162.84002685546875,
+            316.6700439453125,
+            1594.31982421875,
+            361.644287109375
+          ],
+          "transform": "matrix(1.022, 0, 0, 1.022, 0, 0)",
+          "opacity": "1",
+          "display": "flex",
+          "visibility": "hidden",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-num",
+          "rect": [
+            162.84002685546875,
+            322.7221984863281,
+            393.53387451171875,
+            349.5240173339844
+          ],
+          "transform": "none",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "3px rgba(255, 122, 156, 0.55)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "eyebrow rv",
+          "rect": [
+            627.9138793945312,
+            316.6700439453125,
+            571.2182006835938,
+            25.54998779296875
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "750 21px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(255, 122, 156)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "ch-title rv",
+          "rect": [
+            627.9138793945312,
+            368.79205322265625,
+            571.2182006835938,
+            233.49505615234375
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "780 112px / 114.24px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "",
+          "className": "hero-subtitle rv",
+          "rect": [
+            627.9138793945312,
+            630.903076171875,
+            571.2182006835938,
+            47.4112548828125
+          ],
+          "transform": "matrix(1, 0, 0, 1, 0, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "hidden",
+          "font": "32px / 46.4px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(169, 182, 201)",
+          "fontsStatus": "loaded"
+        },
+        {
+          "id": "wipe",
+          "className": "",
+          "rect": [
+            1046.985595703125,
+            0,
+            1920,
+            1080
+          ],
+          "transform": "matrix(1, 0, 0, 1, 1046.99, 0)",
+          "opacity": "1",
+          "display": "block",
+          "visibility": "visible",
+          "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+          "stroke": "0px rgb(244, 247, 251)",
+          "fontsStatus": "loaded"
+        }
+      ]
+    }
+  ]
+}

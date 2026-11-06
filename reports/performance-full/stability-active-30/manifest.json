@@ -1,0 +1,13 @@
+{
+  "sourcePath": "gta6_countdown_10min.html",
+  "sourceSha256": "bca316b923831e3c26731cd8ed64e7d8827d0b67a798f998db5954f3ccbd8abd",
+  "base": "original",
+  "duration": 30,
+  "candidateSha256": "d63ec894066bacab82e978b7c2d6ce5f95825bc51ab3d7cca5637571380a38b1",
+  "hookSha256": "74db70b4c11d036dba7ff83a28b975fc81b9be3be80f19575602cc08fd274d8d",
+  "assets": {
+    "voiceover.mp3": "6f9bd4414fa01eeafb2aad4559b5ef2c0cfb32cfafe835a7395ec3f69865e60f",
+    "music_bed.mp3": "bd39f435e965ae60c2d6c6112e4750dedcd20b3a7f630dc2b47b8a170d996c04"
+  },
+  "scope": "Experimental capture-only active chapter layout reset; original scripts and audio tags unchanged. No renderer default changes."
+}

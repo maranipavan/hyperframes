@@ -1,0 +1,19 @@
+{
+  "args": [
+    "run",
+    "reports/performance-full/capture-repeat-held-relayout",
+    "845",
+    "857",
+    "830",
+    "hold-relayout"
+  ],
+  "compiledSha256": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+  "scriptSha256": "6caa381d92929221602afb93ca30015ac74e1943c92a070fc2f891a20e86757d",
+  "browserExecutable": "/usr/bin/chromium",
+  "start": 845,
+  "end": 857,
+  "preRollStart": 830,
+  "mode": "hold-relayout",
+  "format": "png",
+  "status": "started; summary.json required for a completed result"
+}

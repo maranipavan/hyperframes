@@ -1,0 +1,19 @@
+{
+  "args": [
+    "run",
+    "reports/performance-full/capture-repeat-held-rebuild",
+    "845",
+    "857",
+    "830",
+    "hold-rebuild"
+  ],
+  "compiledSha256": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+  "scriptSha256": "15bd3b309624b7ea569a5308f4aa038ba73073d06d6abb19ebb0df6e0c45c074",
+  "browserExecutable": "/usr/bin/chromium",
+  "start": 845,
+  "end": 857,
+  "preRollStart": 830,
+  "mode": "hold-rebuild",
+  "format": "png",
+  "status": "started; summary.json required for a completed result"
+}

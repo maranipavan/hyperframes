@@ -1,0 +1,103 @@
+{
+  "compiled": "packages/.debug/ab11b61a-6c9c-44dd-9d57-71645d64c7d5/compiled",
+  "compiledSha256": "0c9a906ba32bd1225253e246d37cca271feef3024626018df848953b35d8ba6c",
+  "start": 12830,
+  "end": 12842,
+  "preRollStart": 12830,
+  "mode": "hold-back-listener",
+  "browsers": [
+    "Chrome/155.0.8059.79",
+    "Chrome/155.0.8059.79"
+  ],
+  "effectiveCaptureBeyondViewport": [
+    false,
+    false
+  ],
+  "uniquePixelsPerHeldFrame": [
+    1,
+    1
+  ],
+  "uniqueStatesPerHeldFrame": [
+    1,
+    1
+  ],
+  "format": "png",
+  "captureMode": "screenshot",
+  "note": "No video encoder; fresh browsers, frozen compiled HTML. PNG uses alpha capture. Diagnostic decoding/state reads add overhead unlike streaming JPEG production.",
+  "differingFrames": [],
+  "differingStateFrames": [],
+  "comparisons": [
+    {
+      "frame": 12830,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12831,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12832,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12833,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12834,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12835,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12836,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12837,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12838,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12839,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12840,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 12841,
+      "seekFrame": 12830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    }
+  ]
+}

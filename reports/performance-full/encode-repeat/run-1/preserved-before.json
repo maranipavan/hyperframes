@@ -1,0 +1,16 @@
+{
+  "reports/performance-full/workers/w1-1.mp4": "e24360b272ac7f793ff28d79b8ed33238b9759c54ae0e4d8a8452a84af77fcc1",
+  "reports/performance-full/workers/w1-2.mp4": "148e8b3610df62e7426adaf614886ddf8bf09f80eec05a8be4fe61fc8f2aaadc",
+  "reports/performance-full/workers/w1-1.log": "84dae621222e531b0b5bfcf3d52515261dd05488673375add941b50e96161be1",
+  "reports/performance-full/workers/w1-1.json": "660f73f1e56d143fc99330bc0de311ae0a919a37e5bc4755eb75b4fe3dcfa143",
+  "reports/performance-full/workers/w1-2.log": "d573f131d38663e225c9321c5d6dbc9c2c979f4a6c345146ee1f0e54a2e812ae",
+  "reports/performance-full/workers/w1-2.json": "2a4742205aedc63ee81e09e7a908c44c4332f67e0b6983954a341843640819c4",
+  "packages/engine/src/services/chunkEncoder.ts": "b46bacb685e8daab658bcd9880fd8de71dab3db645d99b2f864a8be00a65bf31",
+  "packages/engine/src/services/streamingEncoder.ts": "0104c189475a9dfb23bc1db2ae28fd9980926eaf0152c685d2baed33c6b6b462",
+  "packages/engine/src/utils/sdrCaptureColor.ts": "032e5d8083029e6184ba7bbf8f62c6673630b9353d8af0b35e29c18e7aa9780e",
+  "packages/engine/src/utils/renderProvenance.ts": "b76e56f8da1039f99074960f7ce2897176e27c96626ff772a2d33c4ef55936b0",
+  "packages/producer/src/services/renderOrchestrator.ts": "59f3272317f9b45b31164d0cc0debde5d76ab3c39285c12f4ec1bc5b2c571dd6",
+  "gta6_countdown_10min.html": "bca316b923831e3c26731cd8ed64e7d8827d0b67a798f998db5954f3ccbd8abd",
+  "reports/performance-full/workers-input/baseline/index.html": "95164394fcdce6a926a2191e7115c3680a238257a0d7b8157bf137fe5a87db8e",
+  "reports/performance-full/verification.json": "604e29281982dfe6780fc53b0d912793c0c243fb2cb1b24da77d13c44ea180f6"
+}

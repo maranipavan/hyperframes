@@ -1,0 +1,1015 @@
+{
+  "renderId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5",
+  "totalElapsedMs": 3065066,
+  "fps": 30,
+  "quality": "draft",
+  "workers": 1,
+  "workerSizing": {
+    "workers": 1,
+    "boundBy": "explicit",
+    "effectiveMaxWorkers": 24,
+    "cpuBasedWorkers": 2,
+    "memoryBasedWorkers": 7,
+    "frameBasedWorkers": 600,
+    "heapBasedWorkers": 4,
+    "heapLimitMb": 4144,
+    "totalMemoryMb": 23974,
+    "cpuCount": 4,
+    "captureCostMultiplier": 1,
+    "exceedsHeapAdvisory": false
+  },
+  "chunkedEncode": false,
+  "chunkSizeFrames": null,
+  "compositionDurationSeconds": 600,
+  "totalFrames": 18000,
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "videoCount": 0,
+  "audioCount": 2,
+  "stages": {
+    "compileOnlyMs": 902,
+    "browserProbeMs": 142,
+    "compileMs": 1054,
+    "videoExtractMs": 1,
+    "audioProcessMs": 10504,
+    "captureMs": 3019566,
+    "captureFrameMs": 3019548,
+    "captureSetupMs": 18,
+    "encodeMs": 3019539,
+    "assembleMs": 33886
+  },
+  "tmpPeakBytes": 84967135,
+  "alphaBlit": {
+    "implementation": "typescript",
+    "reason": "not-configured",
+    "nativeCalls": 0,
+    "nativeMs": 0,
+    "typescriptCalls": 0,
+    "typescriptMs": 0
+  },
+  "observability": {
+    "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5",
+    "compositionHash": "0c9a906ba32bd122",
+    "events": [
+      {
+        "phase": "pipeline",
+        "status": "checkpoint",
+        "elapsedMs": 5,
+        "message": "started",
+        "data": {
+          "format": "mp4",
+          "quality": "draft",
+          "browserGpuMode": "software",
+          "forceScreenshot": true,
+          "protocolTimeoutMs": 600000,
+          "pageNavigationTimeoutMs": 120000,
+          "playerReadyTimeoutMs": 45000,
+          "requestedWorkers": 1
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "compile",
+        "status": "start",
+        "elapsedMs": 8,
+        "data": {
+          "needsAlpha": false
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "compile",
+        "status": "end",
+        "elapsedMs": 914,
+        "durationMs": 906,
+        "data": {
+          "needsAlpha": false
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "compile",
+        "status": "checkpoint",
+        "elapsedMs": 915,
+        "message": "composition metadata resolved",
+        "data": {
+          "width": 1920,
+          "height": 1080,
+          "videoCount": 0,
+          "audioCount": 2,
+          "imageCount": 0,
+          "deviceScaleFactor": 1,
+          "forceScreenshot": true,
+          "compositionHash": "0c9a906ba32bd122"
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "browser_probe",
+        "status": "start",
+        "elapsedMs": 916,
+        "data": {
+          "forceScreenshot": true,
+          "stagePhase": "calibrating"
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "browser_probe",
+        "status": "end",
+        "elapsedMs": 1059,
+        "durationMs": 142,
+        "data": {
+          "forceScreenshot": true,
+          "stagePhase": "calibrating"
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "browser_probe",
+        "status": "checkpoint",
+        "elapsedMs": 1061,
+        "message": "duration resolved",
+        "data": {
+          "durationSeconds": 600,
+          "totalFrames": 18000,
+          "compositionHash": "0c9a906ba32bd122",
+          "beginFrameStalled": false
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "video_extract",
+        "status": "start",
+        "elapsedMs": 1061,
+        "data": {
+          "videoCount": 0
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "video_extract",
+        "status": "end",
+        "elapsedMs": 1063,
+        "durationMs": 1,
+        "data": {
+          "videoCount": 0
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "video_extract",
+        "status": "checkpoint",
+        "elapsedMs": 1073,
+        "message": "frames resolved",
+        "data": {
+          "videoCount": 0,
+          "extractedVideoCount": 0,
+          "totalFramesExtracted": 0,
+          "maxFramesPerVideo": 0,
+          "avgFramesPerExtractedVideo": null,
+          "vfrPreflightCount": null,
+          "vfrPreflightMs": null,
+          "cacheHits": null,
+          "cacheMisses": null,
+          "transientRetries": null,
+          "minVideoFrameCoverageRatio": null,
+          "authoredTimedClipCount": 41
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "hdr_detection",
+        "status": "checkpoint",
+        "elapsedMs": 1073,
+        "message": "resolved",
+        "data": {
+          "requestedHdrMode": "auto",
+          "effectiveHdr": "sdr",
+          "nativeHdrVideoCount": 0,
+          "nativeHdrImageCount": 0
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "audio_process",
+        "status": "start",
+        "elapsedMs": 1074,
+        "data": {
+          "audioCount": 2
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "audio_process",
+        "status": "end",
+        "elapsedMs": 11578,
+        "durationMs": 10504,
+        "data": {
+          "audioCount": 2
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "file_server",
+        "status": "start",
+        "elapsedMs": 11579,
+        "data": {
+          "reused": false
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "file_server",
+        "status": "end",
+        "elapsedMs": 11585,
+        "durationMs": 6,
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_calibration",
+        "status": "checkpoint",
+        "elapsedMs": 11595,
+        "message": "skipped",
+        "data": {
+          "requestedWorkers": 1,
+          "totalFrames": 18000,
+          "htmlInCanvasDetected": false,
+          "lowMemoryMode": false,
+          "deInversionEligible": false,
+          "deParallelRouterEligible": false
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "worker_resolution",
+        "status": "checkpoint",
+        "elapsedMs": 11596,
+        "message": "resolved",
+        "data": {
+          "workerCount": 1
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_strategy",
+        "status": "checkpoint",
+        "elapsedMs": 11597,
+        "message": "resolved",
+        "data": {
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "captureBeyondViewport": null,
+          "useStreamingEncode": true,
+          "useLayeredComposite": false,
+          "usePageSideCompositing": false,
+          "hasHdrContent": false,
+          "hasShaderTransitions": false,
+          "isPngSequence": false
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "start",
+        "elapsedMs": 11598,
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 0,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot"
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 41598,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 173,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 1,
+          "stageElapsedMs": 30000
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 71599,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 351,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 2,
+          "stageElapsedMs": 60001
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 131600,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 706,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 3,
+          "stageElapsedMs": 120002
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 251601,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 1424,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 4,
+          "stageElapsedMs": 240003
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 371602,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 2143,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 5,
+          "stageElapsedMs": 360004
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 491603,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 2867,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 6,
+          "stageElapsedMs": 480005
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 611604,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 3573,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 7,
+          "stageElapsedMs": 600006
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 731605,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 4286,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 8,
+          "stageElapsedMs": 720007
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 851605,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 4996,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 9,
+          "stageElapsedMs": 840007
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 971606,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 5717,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 10,
+          "stageElapsedMs": 960008
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 1091608,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 6435,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 11,
+          "stageElapsedMs": 1080010
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 1211609,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 7156,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 12,
+          "stageElapsedMs": 1200011
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 1331611,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 7870,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 13,
+          "stageElapsedMs": 1320013
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 1451611,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 8583,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 14,
+          "stageElapsedMs": 1440013
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 1571610,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 9295,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 15,
+          "stageElapsedMs": 1560012
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 1691610,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 10011,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 16,
+          "stageElapsedMs": 1680012
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 1811610,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 10723,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 17,
+          "stageElapsedMs": 1800012
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 1931611,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 11447,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 18,
+          "stageElapsedMs": 1920013
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 2051611,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 12160,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 19,
+          "stageElapsedMs": 2040013
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 2171611,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 12874,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 20,
+          "stageElapsedMs": 2160013
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 2291614,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 13597,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 21,
+          "stageElapsedMs": 2280016
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 2411615,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 14308,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 22,
+          "stageElapsedMs": 2400017
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 2531615,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 15020,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 23,
+          "stageElapsedMs": 2520017
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 2651616,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 15729,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 24,
+          "stageElapsedMs": 2640018
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 2771616,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 16460,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 25,
+          "stageElapsedMs": 2760018
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 2891617,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 17174,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 26,
+          "stageElapsedMs": 2880019
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "checkpoint",
+        "elapsedMs": 3011617,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 17885,
+          "captureMode": "screenshot",
+          "captureOperation": "captureScreenshot",
+          "heartbeatIndex": 27,
+          "stageElapsedMs": 3000019
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "capture_streaming",
+        "status": "end",
+        "elapsedMs": 3031145,
+        "durationMs": 3019547,
+        "data": {
+          "stagePhase": "capturing",
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 18000,
+          "captureMode": "screenshot",
+          "captureOperation": "encode"
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "assemble",
+        "status": "start",
+        "elapsedMs": 3031146,
+        "data": {
+          "stagePhase": "capturing",
+          "hasAudio": true,
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 18000,
+          "captureMode": "screenshot",
+          "captureOperation": "encode"
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "assemble",
+        "status": "checkpoint",
+        "elapsedMs": 3061145,
+        "message": "stage still running",
+        "data": {
+          "stagePhase": "capturing",
+          "hasAudio": true,
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 18000,
+          "captureMode": "screenshot",
+          "captureOperation": "encode",
+          "heartbeatIndex": 1,
+          "stageElapsedMs": 29999
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "assemble",
+        "status": "end",
+        "elapsedMs": 3065032,
+        "durationMs": 33886,
+        "data": {
+          "stagePhase": "capturing",
+          "hasAudio": true,
+          "workerCount": 1,
+          "forceScreenshot": true,
+          "totalFrames": 18000,
+          "framesCompleted": 18000,
+          "captureMode": "screenshot",
+          "captureOperation": "encode"
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      },
+      {
+        "phase": "pipeline",
+        "status": "checkpoint",
+        "elapsedMs": 3065067,
+        "message": "artifact validated",
+        "data": {
+          "totalElapsedMs": 3065066
+        },
+        "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+      }
+    ],
+    "eventCount": 51,
+    "lastEvent": {
+      "phase": "pipeline",
+      "status": "checkpoint",
+      "elapsedMs": 3065067,
+      "message": "artifact validated",
+      "data": {
+        "totalElapsedMs": 3065066
+      },
+      "renderJobId": "ab11b61a-6c9c-44dd-9d57-71645d64c7d5"
+    },
+    "browserDiagnostics": {
+      "total": 9,
+      "errors": 0,
+      "pageErrors": 0,
+      "requestFailed": 2,
+      "httpErrors": 1,
+      "navigationStarts": 1,
+      "navigationFailures": 0,
+      "consoleErrors": 0,
+      "consoleWarnings": 0
+    },
+    "capture": {
+      "forceScreenshot": true,
+      "captureMode": "screenshot",
+      "browserGpuMode": "software",
+      "protocolTimeoutMs": 600000,
+      "pageNavigationTimeoutMs": 120000,
+      "playerReadyTimeoutMs": 45000,
+      "workerCount": 1,
+      "compositionElementCount": 858,
+      "compositionElementCountSource": "static",
+      "compositionElementTags": {
+        "div": 434,
+        "span": 270,
+        "section": 38,
+        "br": 37,
+        "h2": 37,
+        "p": 19,
+        "i": 13,
+        "meta": 2,
+        "audio": 2,
+        "title": 1,
+        "head": 1,
+        "header": 1,
+        "h1": 1,
+        "body": 1,
+        "html": 1
+      },
+      "arollVideoCount": 0,
+      "heygenVideoCount": 0,
+      "adaptersUsed": [
+        "gsap"
+      ],
+      "audioCount": 2,
+      "imageCount": 0,
+      "subCompositionCount": 0,
+      "audioGroupCount": 0,
+      "colorGradingCount": 0,
+      "hasLut": false,
+      "capturePath": "streaming",
+      "useStreamingEncode": true,
+      "useLayeredComposite": false,
+      "usePageSideCompositing": false,
+      "hasHdrContent": false,
+      "chromeBrowserRssPeakMb": 212,
+      "chromeRendererRssPeakMb": 455,
+      "chromeRssLastMb": 1082,
+      "chromeGpuProcessSeenLastSample": true,
+      "chromeMemorySamples": 1509,
+      "captureBeyondViewport": false
+    },
+    "extraction": {
+      "videoCount": 0,
+      "extractedVideoCount": 0,
+      "totalFramesExtracted": 0,
+      "maxFramesPerVideo": 0,
+      "authoredTimedClipCount": 41
+    },
+    "init": {
+      "initDurationMs": 845,
+      "tweenCount": 589,
+      "elementCount": 872
+    }
+  },
+  "captureAvgMs": 168,
+  "subTimelineWait": "ready",
+  "captureP50Ms": 167,
+  "peakRssMb": 232,
+  "peakHeapUsedMb": 75,
+  "staticDedup": {
+    "enabled": true,
+    "armed": false,
+    "predictedFrames": 0,
+    "reusedFrames": 0,
+    "skipReason": "ineligible"
+  },
+  "chromeMemory": {
+    "browserRssPeakMb": 212,
+    "rendererRssPeakMb": 455,
+    "rssLastMb": 1075,
+    "gpuProcessSeenLastSample": true,
+    "samples": 1508
+  },
+  "drawElement": {
+    "mode": "screenshot",
+    "clampReason": "unsupported_platform",
+    "workerInversion": "none",
+    "compositionElementCount": 858,
+    "compositionElementCountSource": "static",
+    "compositionElementTags": {
+      "div": 434,
+      "span": 270,
+      "section": 38,
+      "br": 37,
+      "h2": 37,
+      "p": 19,
+      "i": 13,
+      "meta": 2,
+      "audio": 2,
+      "title": 1,
+      "head": 1,
+      "header": 1,
+      "h1": 1,
+      "body": 1,
+      "html": 1
+    },
+    "arollVideoCount": 0,
+    "heygenVideoCount": 0,
+    "adaptersUsed": [
+      "gsap"
+    ],
+    "audioCount": 2,
+    "imageCount": 0,
+    "subCompositionCount": 0,
+    "audioGroupCount": 0,
+    "colorGradingCount": 0,
+    "hasLut": false,
+    "vfxHostCount": 0,
+    "vfxTypes": "",
+    "parallelRouter": "none",
+    "workerEncode": false,
+    "verifyArmed": 0,
+    "verifyChecked": 0,
+    "verifyInitMs": 0,
+    "selfVerifyFallback": false,
+    "blankSuspects": 0,
+    "blankDeterministicAccepts": 0,
+    "blankRecaptures": 0,
+    "boundaryFrames": 0,
+    "ncprFallbacks": 0,
+    "frameTimeouts": 0
+  },
+  "host": {
+    "platform": "linux",
+    "arch": "arm64",
+    "cpuCount": 4,
+    "totalMemMb": 23975,
+    "nodeVersion": "v22.23.3",
+    "gpuDisabled": false
+  }
+}

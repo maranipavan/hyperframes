@@ -1,0 +1,18 @@
+--- gta6_countdown_10min.html
++++ reports/performance-full/stability-30/index.html
+@@ -109,7 +109,7 @@
+   </style>
+ </head>
+ <body>
+-  <div id="root" data-composition-id="main" data-start="0" data-duration="600.00" data-width="1920" data-height="1080">
++  <div id="root" data-composition-id="main" data-start="0" data-duration="30.00" data-width="1920" data-height="1080">
+     <div id="orb1" class="orb"></div><div id="orb2" class="orb"></div>
+     <div class="grid" id="grid" aria-hidden="true"></div>
+     <header class="topbar">
+@@ -618,5 +618,6 @@
+       tl.seek(0);
+     </script>
+   </div>
++<script src="./capture-stability.js"></script>
+ </body>
+ </html>

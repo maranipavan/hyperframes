@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1920, height=1080" />
+  <title>GTA 6 Countdown Briefing - 10 Minute Explainer</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #070a11; }
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #f4f7fb; }
+    #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #070a11; }
+    .orb { position: absolute; width: 1100px; height: 1100px; border-radius: 50%; pointer-events: none; }
+    #orb1 { top: -420px; left: 900px; background: radial-gradient(circle, rgba(255,122,156,.17), transparent 62%); }
+    #orb2 { bottom: -560px; left: -320px; background: radial-gradient(circle, rgba(255,170,60,.12), transparent 62%); }
+    .grid { position: absolute; inset: 0; opacity: .16; background-image: linear-gradient(rgba(148,163,184,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(148,163,184,.13) 1px, transparent 1px); background-size: 64px 64px; mask-image: linear-gradient(to bottom, black, transparent 92%); }
+    .topbar { position: absolute; top: 52px; left: 72px; right: 72px; display: flex; align-items: center; justify-content: space-between; z-index: 30; color: #aab5c8; font-size: 19px; letter-spacing: .12em; text-transform: uppercase; }
+    .brand { display: flex; align-items: center; gap: 14px; font-weight: 750; color: #edf4ff; }
+    .brand-mark { width: 14px; height: 14px; border-radius: 4px; background: #ff7a9c; box-shadow: 0 0 24px rgba(255,122,156,.55); }
+    .top-right { display: flex; align-items: center; gap: 12px; }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #ff7a9c; }
+    .chwrap { position: relative; flex: 1; height: 24px; }
+    .chlabel { position: absolute; left: 0; right: 0; text-align: center; opacity: 0; color: #d4ddeb; font-size: 17px; letter-spacing: .14em; white-space: nowrap; }
+    .bottomline { position: absolute; left: 72px; right: 72px; bottom: 44px; height: 1px; background: rgba(148,163,184,.25); z-index: 20; }
+    #bar-track { position: absolute; left: 72px; right: 72px; bottom: 44px; height: 3px; z-index: 21; }
+    #bar { width: 0%; height: 100%; background: #ff7a9c; }
+    .tick { position: absolute; bottom: 40px; width: 2px; height: 11px; background: rgba(255,255,255,.4); z-index: 22; }
+    .bottom-label { position: absolute; left: 72px; bottom: 16px; color: #7f8da3; font-size: 15px; letter-spacing: .1em; z-index: 30; text-transform: uppercase; }
+    .bottom-time { position: absolute; right: 72px; bottom: 16px; color: #7f8da3; font-size: 15px; letter-spacing: .1em; z-index: 30; text-transform: uppercase; }
+    .scene { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 150px 110px 235px; z-index: 10; }
+    .scene-inner { width: 100%; max-width: 1560px; transform-origin: 50% 50%; }
+    .src { position: absolute; top: 104px; right: 72px; font-size: 15px; letter-spacing: .08em; padding: 9px 16px; border: 1px solid rgba(148,163,184,.3); border-radius: 999px; color: #a9b6c9; background: rgba(15,23,42,.6); z-index: 15; }
+    .eyebrow { color: #ff7a9c; font-size: 21px; font-weight: 750; letter-spacing: .18em; text-transform: uppercase; margin-bottom: 26px; }
+    .hero-title { max-width: 1400px; font-size: 112px; line-height: 1.03; letter-spacing: -.055em; font-weight: 780; margin: 0; }
+    .accent { color: #ff7a9c; }
+    .hero-subtitle { margin: 28px 0 0; color: #a9b6c9; font-size: 32px; line-height: 1.45; max-width: 1100px; }
+    .hero-meta { display: flex; gap: 16px; margin-top: 44px; flex-wrap: wrap; }
+    .hero-meta.center { justify-content: center; }
+    .pill { border: 1px solid rgba(148,163,184,.32); border-radius: 999px; padding: 13px 22px; color: #d4ddeb; background: rgba(15,23,42,.58); font-size: 20px; letter-spacing: .03em; }
+    .layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 66px; align-items: center; }
+    .step-title { font-size: 64px; line-height: 1.06; letter-spacing: -.04em; margin: 0; font-weight: 760; }
+    .step-title.wide { max-width: 1400px; }
+    .step-desc { margin-top: 24px; max-width: 560px; color: #a9b6c9; font-size: 25px; line-height: 1.48; }
+    .panel { border: 1px solid rgba(148,163,184,.3); background: rgba(7,12,21,.92); box-shadow: 0 28px 90px rgba(0,0,0,.32); border-radius: 18px; overflow: hidden; }
+    .panel-head { height: 60px; padding: 0 28px; background: rgba(148,163,184,.09); display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(148,163,184,.18); color: #a9b6c9; font-size: 16px; letter-spacing: .1em; text-transform: uppercase; }
+    .panel-body { padding: 26px 36px 30px; }
+    .panel-body.center { text-align: center; padding: 34px 36px 40px; }
+    @property --num { syntax: '<integer>'; inherits: false; initial-value: 0; }
+    .cnt { --num: 0; }
+    .cnt::before { content: attr(data-pre); }
+    .cnt::after { counter-reset: num var(--num); content: counter(num) attr(data-suf); }
+    .big-number { font-size: 230px; line-height: .95; font-weight: 800; letter-spacing: -.06em; color: #fff; }
+    .big-label { color: #ff7a9c; font-size: 24px; letter-spacing: .2em; text-transform: uppercase; margin-top: 12px; }
+    .big-sub { color: #93a4bd; font-size: 24px; margin-top: 14px; }
+    .cards-row { display: flex; gap: 26px; margin-top: 44px; }
+    .card, .dcard { flex: 1; min-width: 0; padding: 32px 30px; border: 1px solid rgba(148,163,184,.28); border-radius: 18px; background: rgba(15,23,42,.66); box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+    .card-icon { font-size: 54px; margin-bottom: 20px; }
+    .card-big { font-size: 56px; line-height: 1.05; letter-spacing: -.035em; font-weight: 770; margin: 8px 0 12px; }
+    .card-big.md { font-size: 46px; }
+    .card-big.sm { font-size: 36px; }
+    .card-sub { color: #93a4bd; font-size: 22px; line-height: 1.4; }
+    .badge { display: inline-block; padding: 8px 16px; border-radius: 8px; font-size: 17px; font-weight: 750; letter-spacing: .1em; white-space: nowrap; text-align: center; }
+    .badge.ok { background: rgba(100,231,203,.14); color: #64e7cb; }
+    .badge.warn { background: rgba(255,180,84,.15); color: #ffb454; }
+    .badge.off { background: rgba(142,160,184,.16); color: #aab9cf; }
+    .badge.bad { background: rgba(255,92,108,.16); color: #ff7d8a; }
+    .row { display: flex; align-items: center; gap: 22px; padding: 22px 0; border-bottom: 1px solid rgba(148,163,184,.15); font-size: 28px; line-height: 1.3; }
+    .row:last-child { border-bottom: 0; }
+    .row .badge { flex: 0 0 180px; }
+    .vrows { margin-top: 38px; }
+    .vrow { display: flex; align-items: center; gap: 28px; padding: 24px 30px; margin: 16px 0; background: rgba(15,23,42,.66); border: 1px solid rgba(148,163,184,.26); border-radius: 14px; font-size: 32px; line-height: 1.3; }
+    .vrow .badge { flex: 0 0 230px; font-size: 18px; }
+    .tl { position: relative; margin-top: 80px; }
+    .tl-line { position: absolute; top: 14px; height: 4px; background: rgba(148,163,184,.25); border-radius: 4px; }
+    .tl-fill { width: 0%; height: 100%; background: #ff7a9c; border-radius: 4px; }
+    .tl-nodes { display: flex; }
+    .tl-node { flex: 1; text-align: center; position: relative; padding: 0 8px; }
+    .tl-dot { width: 32px; height: 32px; border-radius: 50%; margin: 0 auto 26px; background: #0b1220; border: 4px solid #ff7a9c; position: relative; z-index: 2; }
+    .tl-node.now .tl-dot { background: #ff7a9c; box-shadow: 0 0 34px rgba(255,122,156,.7); }
+    .tl-node.future .tl-dot { border-style: dashed; border-color: #ffb454; }
+    .tl-date { font-size: 34px; font-weight: 760; letter-spacing: -.02em; margin-bottom: 10px; }
+    .tl-label { color: #93a4bd; font-size: 21px; line-height: 1.35; max-width: 230px; margin: 0 auto; }
+    .dcard.hot { border-color: #ff7a9c; box-shadow: 0 0 60px rgba(255,122,156,.2); }
+    .dtag { color: #ff7a9c; font-size: 18px; font-weight: 750; letter-spacing: .18em; }
+    .ddate { font-size: 78px; font-weight: 790; letter-spacing: -.05em; margin: 12px 0 8px; }
+    .ddesc { color: #a9b6c9; font-size: 22px; line-height: 1.4; min-height: 62px; }
+    .dchip { display: inline-block; margin-top: 18px; padding: 8px 16px; border-radius: 999px; background: rgba(255,122,156,.14); color: #ff9db6; font-size: 19px; font-weight: 700; }
+    .bar-row { display: grid; grid-template-columns: 250px 1fr 150px; gap: 24px; align-items: center; padding: 22px 0; }
+    .bar-label { font-size: 26px; color: #d4ddeb; }
+    .bar-track { height: 46px; border-radius: 12px; background: rgba(148,163,184,.14); overflow: hidden; }
+    .bar-fill { width: 0%; height: 100%; border-radius: 12px; background: linear-gradient(90deg, #ff7a9c, #ffb454); }
+    .bar-val { font-size: 40px; font-weight: 780; text-align: right; letter-spacing: -.03em; }
+    .delta { display: inline-block; margin-top: 18px; padding: 12px 22px; border-radius: 999px; background: rgba(255,180,84,.15); color: #ffb454; font-size: 24px; font-weight: 700; }
+    .check { display: flex; align-items: center; gap: 24px; margin: 20px 0; font-size: 30px; line-height: 1.3; }
+    .check i { font-style: normal; width: 46px; height: 46px; flex: 0 0 46px; border-radius: 50%; border: 2px solid #ff7a9c; color: #ff7a9c; display: flex; align-items: center; justify-content: center; font-size: 23px; font-weight: 700; }
+    .callout { margin-top: 28px; border-left: 3px solid #ff7a9c; padding: 12px 0 12px 18px; color: #9eafc7; font-size: 21px; line-height: 1.4; max-width: 560px; }
+    .center-col { text-align: center; }
+    .statement { font-size: 150px; line-height: 1.02; letter-spacing: -.055em; font-weight: 800; margin: 0; }
+    .chapter { display: flex; align-items: center; gap: 70px; }
+    .ch-num { font-size: 380px; font-weight: 800; line-height: .9; letter-spacing: -.06em; color: transparent; -webkit-text-stroke: 3px rgba(255,122,156,.55); }
+    .ch-title { font-size: 112px; line-height: 1.02; letter-spacing: -.05em; margin: 0; font-weight: 780; }
+    .endscreen { display: flex; flex-direction: column; align-items: center; gap: 34px; }
+    .es-video { width: 620px; height: 349px; border: 2px dashed rgba(255,122,156,.5); border-radius: 18px; display: flex; align-items: center; justify-content: center; color: #ff9db6; font-size: 26px; letter-spacing: .16em; text-transform: uppercase; }
+    .es-sub { width: 170px; height: 170px; border: 2px dashed rgba(255,122,156,.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ff9db6; font-size: 20px; letter-spacing: .16em; text-transform: uppercase; }
+    .cap { position: absolute; left: 0; right: 0; bottom: 84px; height: 124px; display: flex; justify-content: center; align-items: flex-end; z-index: 25; pointer-events: none; }
+    .cap span { position: absolute; bottom: 0; max-width: 1560px; text-align: center; opacity: 0; padding: 12px 28px; border-radius: 14px; background: rgba(7,10,17,.78); border: 1px solid rgba(148,163,184,.22); font-size: 33px; line-height: 1.3; color: #f4f7fb; }
+    #wipe { position: absolute; inset: 0; z-index: 50; background: linear-gradient(90deg, #ff7a9c, #ffb454); }
+
+  </style>
+</head>
+<body>
+  <div id="root" data-composition-id="main" data-start="0" data-duration="30.00" data-width="1920" data-height="1080">
+    <div id="orb1" class="orb"></div><div id="orb2" class="orb"></div>
+    <div class="grid" id="grid" aria-hidden="true"></div>
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark"></span><span>Daily Explainer</span></div>
+      <div class="chwrap"><div class="chlabel" id="chl0">00 / Today&#x27;s briefing</div><div class="chlabel" id="chl1">01 / The launch trailer</div><div class="chlabel" id="chl2">02 / How we got here</div><div class="chlabel" id="chl3">03 / What&#x27;s confirmed</div><div class="chlabel" id="chl4">04 / Price &amp; pre-orders</div><div class="chlabel" id="chl5">05 / The calendar</div><div class="chlabel" id="chl6">06 / Fact vs rumor</div><div class="chlabel" id="chl7">07 / Get ready</div><div class="chlabel" id="chl8">08 / What&#x27;s next</div></div>
+      <div class="top-right"><span class="status-dot"></span><span>Trending · 19 Oct 2026</span></div>
+    </header>
+    <div class="bottomline"></div>
+    <div id="bar-track"><div id="bar"></div></div><div class="tick" style="left:calc(72px + (100% - 144px) * 0.04681)"></div><div class="tick" style="left:calc(72px + (100% - 144px) * 0.20578)"></div><div class="tick" style="left:calc(72px + (100% - 144px) * 0.38660)"></div><div class="tick" style="left:calc(72px + (100% - 144px) * 0.47524)"></div><div class="tick" style="left:calc(72px + (100% - 144px) * 0.61574)"></div><div class="tick" style="left:calc(72px + (100% - 144px) * 0.71264)"></div><div class="tick" style="left:calc(72px + (100% - 144px) * 0.78693)"></div><div class="tick" style="left:calc(72px + (100% - 144px) * 0.88295)"></div>
+    <div class="bottom-label">Independent explainer · not affiliated with Rockstar Games or Take-Two</div>
+    <div class="bottom-time">10-minute briefing · sources on screen</div>
+
+    <audio id="voiceover" src="voiceover.mp3" data-start="0" data-duration="600.00" data-track-index="1" data-volume="1"></audio>
+    <audio id="music" src="music_bed.mp3" data-start="0" data-duration="600.00" data-track-index="2" data-volume="0.9"></audio>
+
+<section id="s1" class="clip scene" data-start="0.00" data-duration="17.59" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Trending today · Briefing</div><h1 class="hero-title rv">31 days to<br /><span class="accent">GTA 6.</span></h1><p class="hero-subtitle rv">Your complete briefing · October 19, 2026</p><div class="hero-meta rv"><span class="pill">Confirmed facts</span><span class="pill">Rumor check</span><span class="pill">Prep checklist</span></div></div><div class="cap"><span id="c0">31 days.</span><span id="c1">That is how long is left until GTA 6 is scheduled to launch.</span><span id="c2">And this week, Rockstar released the final launch trailer.</span><span id="c3">In this video, I will walk you through what is confirmed,</span><span id="c4">what is still rumor, and exactly what to do before November 19.</span></div></section>
+<section id="s2" class="clip scene" data-start="17.59" data-duration="10.49" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">The countdown</div><h2 class="step-title rv">Thirty-one days,<br />starting now.</h2><p class="step-desc rv">From today to the scheduled launch date.</p></div><div class="panel rv"><div class="panel-head"><span>Days to launch</span><span>Live counter</span></div><div class="panel-body center"><div class="big-number cnt" id="s2cnt" data-pre="" data-suf=""></div><div class="big-label">Days to launch</div><div class="big-sub">4 weeks · 3 days</div></div></div></div><div class="cap"><span id="c5">Today is October 19. Launch day is November 19.</span><span id="c6">That is 31 days, which is four weeks and three days.</span><span id="c7">So let us make every one of them count.</span></div></section>
+<section id="s3" class="clip scene" data-start="28.08" data-duration="9.44" data-track-index="0"><div class="scene-inner chapter"><div class="ch-num">01</div><div class="ch-body"><div class="eyebrow rv">Chapter 01</div><h2 class="ch-title rv">The launch<br />trailer.</h2><p class="hero-subtitle rv">Released October 15, 2026</p></div></div><div class="cap"><span id="c8">First, the news driving today&#x27;s conversation.</span><span id="c9">On October 15, Rockstar Games released the launch trailer for GTA 6.</span></div></section>
+<section id="s4" class="clip scene" data-start="37.52" data-duration="17.82" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Confirmed</div><h2 class="step-title rv wide">What the release<br />told us.</h2><div class="cards-row"><div class="card it" id="s4i0"><div class="card-icon">📅</div><div class="card-big md">Nov 19, 2026</div><div class="card-sub">Release date</div></div><div class="card it" id="s4i1"><div class="card-icon">🎮</div><div class="card-big sm">PS5 · Xbox Series X|S</div><div class="card-sub">Launch platforms</div></div><div class="card it" id="s4i2"><div class="card-icon">🎥</div><div class="card-big md">Standard PS5</div><div class="card-sub">Footage captured · not a Pro</div></div></div></div><div class="src">Source: Vice · GamesRadar coverage of Rockstar&#x27;s release</div><div class="cap"><span id="c10">Here is what is confirmed from that release.</span><span id="c11">The date is November 19, 2026.</span><span id="c12">The launch platforms are PS5 and Xbox Series X|S.</span><span id="c13">And Rockstar says all of the trailer footage was captured on a standard PS5, not a PS5 Pro.</span></div></section>
+<section id="s5" class="clip scene" data-start="55.34" data-duration="19.34" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">The leads</div><h2 class="step-title rv">Jason<br />and Lucia.</h2><p class="step-desc rv">What coverage describes, and what is opinion.</p></div><div class="panel rv"><div class="panel-head"><span>Characters · trailer coverage</span><span>Status</span></div><div class="panel-body"><div class="row it" id="s5i0"><span class="badge ok">SHOWN</span><span>Jason · military past, trouble finding work</span></div><div class="row it" id="s5i1"><span class="badge ok">SHOWN</span><span>Lucia · calls from jail, the two reconnect</span></div><div class="row it" id="s5i2"><span class="badge warn">PRESS READ</span><span>Tone described as “more intimate”</span></div></div></div></div><div class="src">Source: Vice · GamesRadar · press interpretation noted</div><div class="cap"><span id="c14">The trailer leans into its two leads, Jason and Lucia.</span><span id="c15">Press coverage says Jason has a military past and is struggling to find work.</span><span id="c16">Lucia calls him from jail, and the two reconnect before their criminal adventure.</span><span id="c17">Some outlets call the tone more intimate than earlier trailers,</span><span id="c18">but that is interpretation, not an official statement.</span></div></section>
+<section id="s6" class="clip scene" data-start="74.68" data-duration="13.84" data-track-index="0"><div class="scene-inner center-col"><div class="eyebrow rv">The setting</div><h2 class="statement rv">An easy score<br /><span class="accent">goes wrong.</span></h2><div class="hero-meta center"><span class="pill it" id="s6i0">State of Leonida</span><span class="pill it" id="s6i1">Criminal conspiracy</span><span class="pill it" id="s6i2">“Darkest side of the sunniest place in America”</span></div></div><div class="src">Source: Rockstar&#x27;s description, via Vice</div><div class="cap"><span id="c19">The story is set in the state of Leonida.</span><span id="c20">Rockstar&#x27;s description says an easy score goes wrong,</span><span id="c21">and a criminal conspiracy spreads across the state.</span><span id="c22">Its tagline promises the darkest side of the sunniest place in America.</span></div></section>
+<section id="s7" class="clip scene" data-start="88.51" data-duration="13.97" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Set pieces</div><h2 class="step-title rv wide">Seen versus<br />reported.</h2><div class="vrows"><div class="vrow it" id="s7i0"><span class="badge ok">SEEN</span><span>Helicopter chaos and big set pieces</span></div><div class="vrow it" id="s7i1"><span class="badge ok">SEEN</span><span>Rooftop jump into a hotel pool</span></div><div class="vrow it" id="s7i2"><span class="badge warn">REPORTED</span><span>Dance sweat system · unclear if shown in the trailer</span></div></div></div><div class="src">Source: GamesRadar · detail marked as unclear</div><div class="cap"><span id="c23">The trailer also packs in big set pieces,</span><span id="c24">from helicopter chaos to a rooftop jump into a hotel pool.</span><span id="c25">One report mentions a sweat system tied to how hard characters dance,</span><span id="c26">though it is unclear whether that appears in the trailer.</span></div></section>
+<section id="s8" class="clip scene" data-start="102.48" data-duration="20.99" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Sound and reaction</div><h2 class="step-title rv wide">The music,<br />the buzz.</h2><div class="cards-row"><div class="card it" id="s8i0"><span class="badge ok">CONFIRMED</span><div class="card-big sm">Flower in a Hurricane</div><div class="card-sub">Justice feat. Tame Impala, SZA, King Gizzard · soundtrack album</div></div><div class="card it" id="s8i1"><span class="badge warn">REPORTED</span><div class="card-big md">1M+ views</div><div class="card-sub">In about 30 minutes · early counts can be unreliable</div></div></div></div><div class="src">Source: GamesRadar · Vice</div><div class="cap"><span id="c27">Music fans should note the debut of a new song, Flower in a Hurricane,</span><span id="c28">by Justice, featuring Tame Impala, SZA, and King Gizzard and the Lizard Wizard.</span><span id="c29">Coverage says it will be on the official soundtrack album.</span><span id="c30">And reports say the trailer passed one million YouTube views in about half an hour,</span><span id="c31">though early view counts can be unreliable.</span></div></section>
+<section id="s9" class="clip scene" data-start="123.47" data-duration="8.43" data-track-index="0"><div class="scene-inner chapter"><div class="ch-num">02</div><div class="ch-body"><div class="eyebrow rv">Chapter 02</div><h2 class="ch-title rv">How we<br />got here.</h2><p class="hero-subtitle rv">Dates, delays, and confirmations</p></div></div><div class="cap"><span id="c32">To understand why this launch feels so big, look at the road that led here.</span><span id="c33">This game has been in development for more than a decade.</span></div></section>
+<section id="s10" class="clip scene" data-start="131.90" data-duration="28.44" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Timeline</div><h2 class="step-title rv wide">Every date that mattered.</h2><div class="tl"><div class="tl-line" style="left:8.33%;right:8.33%"><div class="tl-fill" id="s10fill"></div></div><div class="tl-nodes"><div class="tl-node it past" id="s10i0"><div class="tl-dot"></div><div class="tl-date">Dec 2023</div><div class="tl-label">First trailer · aimed at 2025</div></div><div class="tl-node it past" id="s10i1"><div class="tl-dot"></div><div class="tl-date">May 2025</div><div class="tl-label">Delay to May 26, 2026</div></div><div class="tl-node it past" id="s10i2"><div class="tl-dot"></div><div class="tl-date">Nov 6, 2025</div><div class="tl-label">Delay to Nov 19, 2026</div></div><div class="tl-node it past" id="s10i3"><div class="tl-dot"></div><div class="tl-date">May 21, 2026</div><div class="tl-label">CEO reconfirms the date</div></div><div class="tl-node it now" id="s10i4"><div class="tl-dot"></div><div class="tl-date">Oct 15, 2026</div><div class="tl-label">Launch trailer released</div></div><div class="tl-node it future" id="s10i5"><div class="tl-dot"></div><div class="tl-date">Nov 19, 2026</div><div class="tl-label">Scheduled launch</div></div></div></div></div><div class="src">Source: GameSpot · Variety · GTA Vi Spot (fan site)</div><div class="cap"><span id="c34">Rockstar revealed the first trailer in December 2023, aiming for 2025.</span><span id="c35">In May 2025, the date moved to May 26, 2026.</span><span id="c36">Then on November 6, 2025, Take-Two announced another delay, this time to November 19, 2026.</span><span id="c37">On May 21, 2026, Take-Two&#x27;s CEO confirmed that date again on an earnings call.</span><span id="c38">And on October 15, 2026, the launch trailer arrived.</span></div></section>
+<section id="s11" class="clip scene" data-start="160.34" data-duration="16.49" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">The second delay</div><h2 class="step-title rv">Six more months<br />of polish.</h2><p class="step-desc rv">Announced November 6, 2025, alongside Take-Two&#x27;s earnings.</p></div><div class="panel rv"><div class="panel-head"><span>Months of delay</span><span>Live counter</span></div><div class="panel-body center"><div class="big-number cnt" id="s11cnt" data-pre="≈" data-suf=""></div><div class="big-label">Months of delay</div><div class="big-sub">Shares dipped about $30 after hours, then rebounded</div></div></div></div><div class="src">Source: GameSpot · Variety</div><div class="cap"><span id="c39">The second delay pushed the game back by roughly six months.</span><span id="c40">Rockstar said the extra time would let the team finish the game to its usual standard,</span><span id="c41">and it apologized for the wait.</span><span id="c42">At the time, Take-Two&#x27;s shares fell by nearly 30 dollars in after-hours trading,</span><span id="c43">then rebounded.</span></div></section>
+<section id="s12" class="clip scene" data-start="176.83" data-duration="31.57" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Why big games slip</div><h2 class="step-title rv wide">Polish takes<br />time.</h2><div class="cards-row"><div class="card it" id="s12i0"><div class="card-icon">🐞</div><div class="card-big md">Bug fixing</div><div class="card-sub">Content must all work together</div></div><div class="card it" id="s12i1"><div class="card-icon">⚡</div><div class="card-big md">Performance</div><div class="card-sub">Smooth on base consoles</div></div><div class="card it" id="s12i2"><div class="card-icon">✅</div><div class="card-big md">Certification</div><div class="card-sub">Platform testing before shipping</div></div></div></div><div class="src">General industry context · not specific to GTA 6</div><div class="cap"><span id="c44">Why do huge games slip? Rockstar has only said it needs more time to polish,</span><span id="c45">but we can look at why this happens in general.</span><span id="c46">Open-world games have enormous amounts of content that must all work together,</span><span id="c47">so late-stage bug fixing can take months.</span><span id="c48">Performance tuning is another big piece,</span><span id="c49">especially making sure the game runs smoothly on base consoles.</span><span id="c50">And console makers require final testing and certification before any game can ship.</span><span id="c51">None of this is a claim about the specifics of GTA 6. It is general industry context.</span></div></section>
+<section id="s13" class="clip scene" data-start="208.40" data-duration="23.56" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Consistent messaging</div><h2 class="step-title rv wide">Same date,<br />again and again.</h2><div class="cards-row"><div class="card it" id="s13i0"><div class="card-icon">🗓️</div><div class="card-big md">May 21, 2026</div><div class="card-sub">Date reconfirmed on the earnings call</div></div><div class="card it" id="s13i1"><div class="card-icon">💬</div><div class="card-big md">“Really good”</div><div class="card-sub">How the CEO described confidence</div></div><div class="card it" id="s13i2"><div class="card-icon">📣</div><div class="card-big md">Heavy marketing</div><div class="card-sub">Less reliance on network TV ads</div></div></div></div><div class="src">Source: Kotaku · Variety</div><div class="cap"><span id="c52">Since then, the messaging has been consistent.</span><span id="c53">In May, Take-Two&#x27;s CEO, Strauss Zelnick,</span><span id="c54">said the company feels really good about November 19.</span><span id="c55">He also said that Take-Two will still market the game heavily,</span><span id="c56">though with less reliance on network television ads than in the past.</span><span id="c57">And as of May,</span><span id="c58">the price and a third trailer had not been revealed.</span><span id="c59">The price has since appeared in pre-order listings.</span></div></section>
+<section id="s14" class="clip scene" data-start="231.96" data-duration="6.82" data-track-index="0"><div class="scene-inner chapter"><div class="ch-num">03</div><div class="ch-body"><div class="eyebrow rv">Chapter 03</div><h2 class="ch-title rv">What is<br />confirmed.</h2><p class="hero-subtitle rv">Facts versus open questions</p></div></div><div class="cap"><span id="c60">So what do we actually know for sure?</span><span id="c61">Let us separate confirmed facts from open questions.</span></div></section>
+<section id="s15" class="clip scene" data-start="238.78" data-duration="16.94" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">The solid ground</div><h2 class="step-title rv wide">Three things<br />we know.</h2><div class="cards-row"><div class="card it" id="s15i0"><span class="badge ok">CONFIRMED</span><div class="card-big ">Nov 19</div><div class="card-sub">Release date, 2026</div></div><div class="card it" id="s15i1"><span class="badge ok">CONFIRMED</span><div class="card-big sm">PS5 + Xbox Series X|S</div><div class="card-sub">Launch platforms</div></div><div class="card it" id="s15i2"><span class="badge warn">REPORTED</span><div class="card-big md">Single-player</div><div class="card-sub">At launch, per the September shareholder meeting</div></div></div></div><div class="src">Source: Kotaku · GTABoom · Vice</div><div class="cap"><span id="c62">Confirmed: the release date is November 19, 2026.</span><span id="c63">Confirmed: the launch platforms are PS5 and Xbox Series X|S.</span><span id="c64">And according to a report from the September shareholder meeting,</span><span id="c65">the game ships as a single-player experience at launch.</span></div></section>
+<section id="s16" class="clip scene" data-start="255.72" data-duration="18.45" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Not yet answered</div><h2 class="step-title rv wide">What nobody<br />has announced.</h2><div class="vrows"><div class="vrow it" id="s16i0"><span class="badge off">NOT ANNOUNCED</span><span>PC version · no date from Rockstar</span></div><div class="vrow it" id="s16i1"><span class="badge off">NOT ANNOUNCED</span><span>Online mode · no schedule</span></div><div class="vrow it" id="s16i2"><span class="badge off">NO SIGNS</span><span>Nintendo Switch 2 version</span></div><div class="vrow it" id="s16i3"><span class="badge off">UNKNOWN</span><span>Game Pass / PS Plus plans</span></div></div></div><div class="src">Source: T3 · NEOTEO · as far as reported</div><div class="cap"><span id="c66">Now the open questions.</span><span id="c67">There is no announced date for a PC version.</span><span id="c68">Rockstar has not announced a schedule for an online mode.</span><span id="c69">There are no signs of a Switch 2 version,</span><span id="c70">and no known plans for subscription services like Game Pass or PS Plus.</span><span id="c71">Any specific date you see for these is a guess.</span></div></section>
+<section id="s17" class="clip scene" data-start="274.17" data-duration="10.98" data-track-index="0"><div class="scene-inner center-col"><div class="eyebrow rv">Open detail</div><h2 class="statement rv">Launch time?<br /><span class="accent">Check your store.</span></h2><div class="hero-meta center"><span class="pill it" id="s17i0">Not confirmed in my research</span><span class="pill it" id="s17i1">Varies by region</span><span class="pill it" id="s17i2">Check closer to launch</span></div></div><div class="cap"><span id="c72">One more detail I could not confirm is the exact launch time in your region.</span><span id="c73">Release times can differ by platform and country, so check your store page closer to launch.</span></div></section>
+<section id="s18" class="clip scene" data-start="285.14" data-duration="6.61" data-track-index="0"><div class="scene-inner chapter"><div class="ch-num">04</div><div class="ch-body"><div class="eyebrow rv">Chapter 04</div><h2 class="ch-title rv">Price and<br />pre-orders.</h2><p class="hero-subtitle rv">Editions, regions, and bonuses</p></div></div><div class="cap"><span id="c74">Next, the money.</span><span id="c75">Console pre-orders opened on June 25, 2026.</span></div></section>
+<section id="s19" class="clip scene" data-start="291.75" data-duration="17.47" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">US pricing</div><h2 class="step-title rv">Two editions,<br />$20 apart.</h2><p class="step-desc rv">US store listings, standard pricing.</p></div><div class="panel rv"><div class="panel-head"><span>Edition pricing</span><span>USD</span></div><div class="panel-body"><div class="bar-row it" id="s19i0"><div class="bar-label">Standard Edition</div><div class="bar-track"><div class="bar-fill" id="s19b0"></div></div><div class="bar-val">$79.99</div></div><div class="bar-row it" id="s19i1"><div class="bar-label">Ultimate Edition</div><div class="bar-track"><div class="bar-fill" id="s19b1"></div></div><div class="bar-val">$99.99</div></div><div class="delta it" id="s19i2">+$20 for exclusive extras</div></div></div></div><div class="src">Source: store and retailer listings via T3 · NEOTEO</div><div class="cap"><span id="c76">In the US, the Standard Edition is listed at $79.99.</span><span id="c77">The Ultimate Edition is listed at $99.99.</span><span id="c78">That is exactly $20 more, for exclusive vehicles, weapons,</span><span id="c79">apparel, and missions, according to the store listing.</span></div></section>
+<section id="s20" class="clip scene" data-start="309.22" data-duration="15.39" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Regional pricing</div><h2 class="step-title rv wide">Standard Edition<br />around the world.</h2><div class="cards-row"><div class="card it" id="s20i0"><div class="card-icon">🇺🇸</div><div class="card-big ">$79.99</div><div class="card-sub">United States</div></div><div class="card it" id="s20i1"><div class="card-icon">🇬🇧</div><div class="card-big ">£69.99</div><div class="card-sub">United Kingdom</div></div><div class="card it" id="s20i2"><div class="card-icon">🇪🇺</div><div class="card-big ">€79.99</div><div class="card-sub">Europe</div></div><div class="card it" id="s20i3"><div class="card-icon">🇦🇺</div><div class="card-big md">AU$129.95</div><div class="card-sub">Australia</div></div></div></div><div class="src">Source: T3 listings · prices vary by store</div><div class="cap"><span id="c80">Prices vary by region.</span><span id="c81">The Standard Edition is listed at £69.99 in the UK,</span><span id="c82">€79.99 in Europe, and AU$129.95 in Australia.</span><span id="c83">Always check your own store before you buy.</span></div></section>
+<section id="s21" class="clip scene" data-start="324.61" data-duration="17.56" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">Bonuses</div><h2 class="step-title rv">Pre-order<br />extras.</h2><p class="step-desc rv">Listed by stores. Verify before you buy.</p></div><div class="panel rv"><div class="panel-head"><span>Pre-order bonuses</span><span>Source</span></div><div class="panel-body"><div class="row it" id="s21i0"><span class="badge ok">LISTED</span><span>Vintage Vice City Pack · before Nov 20</span></div><div class="row it" id="s21i1"><span class="badge ok">LISTED</span><span>Free month of GTA+ · digital pre-orders</span></div><div class="row it" id="s21i2"><span class="badge warn">CHECK</span><span>Confirm on the page where you buy</span></div></div></div></div><div class="src">Source: retailer and press listings · confirm on your store page</div><div class="cap"><span id="c84">Pre-order extras are worth knowing about.</span><span id="c85">Retailers list a Vintage Vice City Pack for orders placed before November 20.</span><span id="c86">Digital pre-orders also list a free month of GTA+.</span><span id="c87">These details come from store and press listings, so confirm them on the page where you buy.</span></div></section>
+<section id="s22" class="clip scene" data-start="342.17" data-duration="16.12" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">Digital vs physical</div><h2 class="step-title rv">Which copy<br />to buy?</h2><p class="step-desc rv">A detail worth double-checking.</p></div><div class="panel rv"><div class="panel-head"><span>Format notes</span><span>Status</span></div><div class="panel-body"><div class="row it" id="s22i0"><span class="badge warn">REPORTED</span><span>Physical box may contain a download code</span></div><div class="row it" id="s22i1"><span class="badge warn">CHECK</span><span>Read the product listing before buying</span></div><div class="row it" id="s22i2"><span class="badge ok">LISTED</span><span>Digital pre-orders can be pre-loaded</span></div></div></div></div><div class="src">Source: T3 (single report) · treat as unconfirmed</div><div class="cap"><span id="c88">Digital or physical? One report says physical</span><span id="c89">editions contain a download code instead of a disc.</span><span id="c90">Treat that as a single-source detail, and check the box description before you buy.</span><span id="c91">Digital pre-orders can be pre-loaded, so you can be ready the moment launch day arrives.</span></div></section>
+<section id="s23" class="clip scene" data-start="358.29" data-duration="11.15" data-track-index="0"><div class="scene-inner center-col"><div class="eyebrow rv">Scam warning</div><h2 class="statement rv">Only buy from<br /><span class="accent">official stores.</span></h2><div class="hero-meta center"><span class="pill it" id="s23i0">Official console stores</span><span class="pill it" id="s23i1">Trusted retailers</span><span class="pill it" id="s23i2">Skip random links</span></div></div><div class="cap"><span id="c92">One warning: fake pre-order listings have circulated online.</span><span id="c93">Stick to official console stores and trusted retailers,</span><span id="c94">and be wary of any deal that looks too good to be true.</span></div></section>
+<section id="s24" class="clip scene" data-start="369.44" data-duration="3.70" data-track-index="0"><div class="scene-inner chapter"><div class="ch-num">05</div><div class="ch-body"><div class="eyebrow rv">Chapter 05</div><h2 class="ch-title rv">The<br />calendar.</h2><p class="hero-subtitle rv">Four dates for the next 31 days</p></div></div><div class="cap"><span id="c95">Now let us put the key dates on your calendar.</span></div></section>
+<section id="s25" class="clip scene" data-start="373.14" data-duration="19.10" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Your calendar</div><h2 class="step-title rv wide">Four dates<br />to remember.</h2><div class="cards-row"><div class="dcard it " id="s25i0"><div class="dtag">TODAY</div><div class="ddate">Oct 19</div><div class="ddesc">Briefing day</div><div class="dchip">Day 0</div></div><div class="dcard it " id="s25i1"><div class="dtag">EARNINGS</div><div class="ddate">Nov 9</div><div class="ddesc">Take-Two call · 4:30 p.m. ET</div><div class="dchip">In 21 days</div></div><div class="dcard it " id="s25i2"><div class="dtag">PRE-LOAD</div><div class="ddate">Nov 12</div><div class="ddesc">Digital pre-loads begin</div><div class="dchip">In 24 days</div></div><div class="dcard it hot" id="s25i3"><div class="dtag">LAUNCH</div><div class="ddate">Nov 19</div><div class="ddesc">GTA 6 launches</div><div class="dchip">In 31 days</div></div></div></div><div class="src">Source: GTABoom · Vice · T3</div><div class="cap"><span id="c96">Today is October 19.</span><span id="c97">On November 9, Take-Two reports quarterly earnings at 4:30 p.m. Eastern,</span><span id="c98">the last investor update before launch.</span><span id="c99">On November 12, digital pre-loads begin, and physical editions are reported to arrive.</span><span id="c100">And on November 19, GTA 6 launches.</span></div></section>
+<section id="s26" class="clip scene" data-start="392.24" data-duration="17.83" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">Earnings call, explained</div><h2 class="step-title rv">What Nov 9<br />will and will not show.</h2><p class="step-desc rv">A routine investor update, last before launch.</p></div><div class="panel rv"><div class="panel-head"><span>Q2 FY2027 call</span><span>Covers</span></div><div class="panel-body"><div class="row it" id="s26i0"><span class="badge ok">INCLUDED</span><span>Quarter ending September 30</span></div><div class="row it" id="s26i1"><span class="badge off">NOT INCLUDED</span><span>Any GTA 6 launch sales</span></div><div class="row it" id="s26i2"><span class="badge warn">LATER</span><span>Sales results · expected early 2027</span></div></div></div></div><div class="src">Source: GTABoom</div><div class="cap"><span id="c101">A quick note on that earnings call.</span><span id="c102">The quarter it covers ended September 30, so it will not include any launch sales.</span><span id="c103">Real sales figures should show up in the next report, expected in early 2027.</span><span id="c104">So the November 9 call is more about updates and tone than sales numbers.</span></div></section>
+<section id="s27" class="clip scene" data-start="410.07" data-duration="17.51" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">Pre-load</div><h2 class="step-title rv">Be ready<br />before launch.</h2><p class="step-desc rv">Download early, play on day one.</p></div><div class="panel rv"><div class="panel-head"><span>Days of pre-load</span><span>Live counter</span></div><div class="panel-body center"><div class="big-number cnt" id="s27cnt" data-pre="" data-suf=""></div><div class="big-label">Days of pre-load</div><div class="big-sub">Starts Nov 12 · reported</div></div></div></div><div class="src">Source: Vice · reported pre-load date</div><div class="cap"><span id="c105">Pre-loading matters.</span><span id="c106">It means the game files download before launch,</span><span id="c107">so on November 19 you press play instead of waiting.</span><span id="c108">Pre-loads are reported to begin on November 12, one week early.</span><span id="c109">Check your free storage now, because a modern open-world game can need a large download.</span></div></section>
+<section id="s28" class="clip scene" data-start="427.58" data-duration="3.76" data-track-index="0"><div class="scene-inner chapter"><div class="ch-num">06</div><div class="ch-body"><div class="eyebrow rv">Chapter 06</div><h2 class="ch-title rv">Fact versus<br />rumor.</h2><p class="hero-subtitle rv">A real example from this year</p></div></div><div class="cap"><span id="c110">Rumors spread fast around a launch this big.</span></div></section>
+<section id="s29" class="clip scene" data-start="431.35" data-duration="19.29" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Case study</div><h2 class="step-title rv wide">Panic, then<br />confirmation.</h2><div class="vrows"><div class="vrow it" id="s29i0"><span class="badge bad">MISTAKE</span><span>Retailer page “leaked” a pre-order date</span></div><div class="vrow it" id="s29i1"><span class="badge bad">NO CREDIBILITY</span><span>Anonymous post claimed a Feb 2027 delay</span></div><div class="vrow it" id="s29i2"><span class="badge ok">CONFIRMED</span><span>CEO reconfirmed Nov 19 · May 21, 2026</span></div></div></div><div class="src">Source: Kotaku</div><div class="cap"><span id="c111">Here is a real example from this year.</span><span id="c112">In the week before the May earnings call,</span><span id="c113">a retailer page appeared to leak a pre-order date, but that turned out to be a mistake.</span><span id="c114">An anonymous forum post then claimed a delay to February 2027, which had no credibility.</span><span id="c115">Then the CEO confirmed November 19 on the call.</span></div></section>
+<section id="s30" class="clip scene" data-start="450.64" data-duration="21.52" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">Headline filter</div><h2 class="step-title rv">Three questions<br />before you share.</h2><div class="callout rv">Fails the tests? Treat it as a rumor and wait.</div></div><div class="panel rv"><div class="panel-head"><span>Headline filter</span><span>3 items</span></div><div class="panel-body"><div class="check it" id="s30i0"><i>1</i><span>Is it from Rockstar, Take-Two, or an official store?</span></div><div class="check it" id="s30i1"><i>2</i><span>Does it name a source, a date, and a number?</span></div><div class="check it" id="s30i2"><i>3</i><span>Does it say “confirmed” or “reportedly”?</span></div></div></div></div><div class="cap"><span id="c116">Here is a simple three-step filter for any GTA 6 headline.</span><span id="c117">One: does it come from Rockstar, Take-Two, or an official store page?</span><span id="c118">Two: does the claim name a source, a date, and a number?</span><span id="c119">Three: does the outlet say confirmed, or does it say reportedly?</span><span id="c120">If a claim fails these tests, treat it as a rumor and wait.</span></div></section>
+<section id="s31" class="clip scene" data-start="472.16" data-duration="2.58" data-track-index="0"><div class="scene-inner chapter"><div class="ch-num">07</div><div class="ch-body"><div class="eyebrow rv">Chapter 07</div><h2 class="ch-title rv">Get<br />ready.</h2><p class="hero-subtitle rv">Your launch-week checklist</p></div></div><div class="cap"><span id="c121">Now, how to get ready.</span></div></section>
+<section id="s32" class="clip scene" data-start="474.74" data-duration="22.74" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">Checklist</div><h2 class="step-title rv">Do these<br />before Nov 12.</h2></div><div class="panel rv"><div class="panel-head"><span>Checklist</span><span>5 items</span></div><div class="panel-body"><div class="check it" id="s32i0"><i>✓</i><span>Free up console storage</span></div><div class="check it" id="s32i1"><i>✓</i><span>Update console · check your connection</span></div><div class="check it" id="s32i2"><i>✓</i><span>Set a budget · decide on the Ultimate extras</span></div><div class="check it" id="s32i3"><i>✓</i><span>Buy from official stores only</span></div><div class="check it" id="s32i4"><i>✓</i><span>Mute spoilers and leaks</span></div></div></div></div><div class="cap"><span id="c122">Here is your launch-week checklist.</span><span id="c123">Free up console storage so pre-load is never blocked.</span><span id="c124">Update your console and check your internet connection before November 12.</span><span id="c125">Decide on a budget, and whether the Ultimate Edition extras matter to you.</span><span id="c126">Buy only from official stores and trusted retailers.</span><span id="c127">And protect yourself from spoilers, because leaks spread fast around launch.</span></div></section>
+<section id="s33" class="clip scene" data-start="497.48" data-duration="17.82" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">Which edition?</div><h2 class="step-title rv">Standard<br />or Ultimate.</h2><p class="step-desc rv">A simple way to decide.</p></div><div class="panel rv"><div class="panel-head"><span>Edition guide</span><span>US price</span></div><div class="panel-body"><div class="row it" id="s33i0"><span class="badge ok">STANDARD</span><span>The base purchase · $79.99</span></div><div class="row it" id="s33i1"><span class="badge warn">ULTIMATE</span><span>Adds exclusive extras · $99.99</span></div></div></div></div><div class="src">Source: store listings</div><div class="cap"><span id="c128">Not sure which edition to pick?</span><span id="c129">If you mainly want the game, the Standard Edition is the base purchase.</span><span id="c130">If you want the extra vehicles, weapons, apparel,</span><span id="c131">and missions, the Ultimate Edition adds them for $20 more.</span><span id="c132">Either way, there is no need to rush into a decision this week.</span></div></section>
+<section id="s34" class="clip scene" data-start="515.29" data-duration="14.48" data-track-index="0"><div class="scene-inner center-col"><div class="eyebrow rv">Your call</div><h2 class="statement rv">Day one,<br /><span class="accent">or wait?</span></h2><div class="hero-meta center"><span class="pill it" id="s34i0">Day one · play with everyone</span><span class="pill it" id="s34i1">Wait · reviews and performance first</span><span class="pill it" id="s34i2">No review date announced yet</span></div></div><div class="cap"><span id="c133">Should you buy at launch or wait for reviews?</span><span id="c134">It is a personal call. Many players buy on day one,</span><span id="c135">while others prefer to see reviews and performance reports first.</span><span id="c136">I have not seen an official review date announced, so watch for official word.</span></div></section>
+<section id="s35" class="clip scene" data-start="529.77" data-duration="3.81" data-track-index="0"><div class="scene-inner chapter"><div class="ch-num">08</div><div class="ch-body"><div class="eyebrow rv">Chapter 08</div><h2 class="ch-title rv">What is<br />next.</h2><p class="hero-subtitle rv">Three things to watch</p></div></div><div class="cap"><span id="c137">What should you watch over the next 31 days?</span></div></section>
+<section id="s36" class="clip scene" data-start="533.58" data-duration="13.75" data-track-index="0"><div class="scene-inner"><div class="eyebrow rv">Watch list</div><h2 class="step-title rv wide">Three things<br />to watch.</h2><div class="cards-row"><div class="card it" id="s36i0"><div class="card-icon">📊</div><div class="card-big ">Nov 9</div><div class="card-sub">Take-Two earnings call</div></div><div class="card it" id="s36i1"><div class="card-icon">⬇️</div><div class="card-big ">Nov 12</div><div class="card-sub">Pre-load begins</div></div><div class="card it" id="s36i2"><div class="card-icon">📢</div><div class="card-big ">Rockstar</div><div class="card-sub">Official launch-day updates</div></div></div></div><div class="cap"><span id="c138">Watch these three things.</span><span id="c139">November 9: Take-Two&#x27;s earnings call.</span><span id="c140">November 12: the pre-load start.</span><span id="c141">And any official word from Rockstar on launch-day details,</span><span id="c142">which is the only place to trust for new announcements.</span></div></section>
+<section id="s37" class="clip scene" data-start="547.33" data-duration="23.58" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">Recap</div><h2 class="step-title rv">The whole video<br />in five lines.</h2></div><div class="panel rv"><div class="panel-head"><span>Recap</span><span>5 items</span></div><div class="panel-body"><div class="check it" id="s37i0"><i>1</i><span>Launch: Nov 19, 2026 · PS5 and Xbox Series X|S</span></div><div class="check it" id="s37i1"><i>2</i><span>Launch trailer arrived Oct 15</span></div><div class="check it" id="s37i2"><i>3</i><span>Pre-orders open · US Standard $79.99</span></div><div class="check it" id="s37i3"><i>4</i><span>PC and online: no announced dates</span></div><div class="check it" id="s37i4"><i>5</i><span>Pre-load starts Nov 12 (reported)</span></div></div></div></div><div class="cap"><span id="c143">Quick recap.</span><span id="c144">GTA 6 launches November 19, 2026 on PS5 and Xbox Series X|S.</span><span id="c145">The launch trailer arrived October 15.</span><span id="c146">Pre-orders are open, with a US Standard price of $79.99.</span><span id="c147">PC and online have no announced dates.</span><span id="c148">And pre-load starts November 12, reportedly.</span></div></section>
+<section id="s38" class="clip scene" data-start="570.92" data-duration="29.08" data-track-index="0"><div class="scene-inner layout"><div><div class="eyebrow rv">Thanks for watching</div><h2 class="hero-title rv" style="font-size:92px">See you in<br /><span class="accent">31 days.</span></h2><p class="hero-subtitle rv">Follow for the next daily explainer.</p><div class="callout rv">Independent explainer · not affiliated with Rockstar Games or Take-Two Interactive</div></div><div class="endscreen rv"><div class="es-video">Next video</div><div class="es-sub">Follow</div></div></div><div class="cap"><span id="c149">That is your 31-day briefing.</span><span id="c150">If it helped, follow for the next daily explainer,</span><span id="c151">and tell me in the comments what you are most excited about.</span><span id="c152">Details can change, so always check official sources.</span><span id="c153">This video is an independent explainer and is</span><span id="c154">not affiliated with Rockstar Games or Take-Two.</span></div></section>
+
+    <div id="wipe"></div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+      // reveal a group of elements with a stagger
+      function R(sel, t) { tl.fromTo(sel, { opacity: 0, y: 28 }, { opacity: 1, y: 0, duration: 0.55, ease: 'power3.out', stagger: 0.13 }, t); }
+      // reveal a single synced item
+      function IT(sel, t) { tl.fromTo(sel, { opacity: 0, y: 34, scale: 0.97 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: 'power3.out' }, t); }
+      function FI(sel, t) { tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.25, ease: 'power1.out' }, t); }
+      function FO(sel, t) { tl.to(sel, { opacity: 0, duration: 0.3, ease: 'power1.in' }, t); }
+      // slow push-in on the scene content
+      function PUSH(sel, t, d) { tl.fromTo(sel, { scale: 1 }, { scale: 1.022, duration: d, ease: 'none' }, t); }
+      // caption chunk in/out
+      function CAP(sel, a, b) {
+        tl.fromTo(sel, { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: 'power2.out' }, a);
+        tl.to(sel, { opacity: 0, duration: 0.12 }, Math.max(a + 0.2, b - 0.04));
+      }
+      function CHL(sel, a, b) {
+        tl.fromTo(sel, { opacity: 0 }, { opacity: 1, duration: 0.3 }, a);
+        tl.to(sel, { opacity: 0, duration: 0.3 }, b - 0.3);
+      }
+      // counter driven by a registered CSS integer property (no callbacks, so it survives plain seeking)
+      function CNT(sel, val, t, dur) {
+        tl.fromTo(sel, { '--num': 0 }, { '--num': val, duration: dur, ease: 'power2.out' }, t);
+      }
+      function BAR(sel, pct, t) { tl.fromTo(sel, { width: '0%' }, { width: pct + '%', duration: 1.1, ease: 'power3.out' }, t); }
+      function FILL(sel, a, b) { tl.fromTo(sel, { width: '0%' }, { width: '100%', duration: Math.max(0.5, b - a), ease: 'none' }, a); }
+      function WIPE(t) {
+        tl.fromTo('#wipe', { xPercent: -105 }, { xPercent: 0, duration: 0.3, ease: 'power2.in' }, t - 0.3);
+        tl.to('#wipe', { xPercent: 105, duration: 0.4, ease: 'power2.out' }, t);
+      }
+
+      CAP('#c0',0.50,1.64);
+      CAP('#c1',1.86,5.70);
+      CAP('#c2',5.92,9.16);
+      CAP('#c3',9.38,12.90);
+      CAP('#c4',12.90,16.79);
+      FI('#s1',0.00);
+      PUSH('#s1 .scene-inner',0.00,17.59);
+      R('#s1 .rv',0.25);
+      FO('#s1',17.29);
+      CAP('#c5',18.09,21.58);
+      CAP('#c6',21.80,25.06);
+      CAP('#c7',25.28,27.28);
+      FI('#s2',17.59);
+      PUSH('#s2 .scene-inner',17.59,10.49);
+      R('#s2 .rv',17.84);
+      CNT('#s2cnt',31,18.29,2.2);
+      FO('#s2',27.78);
+      CAP('#c8',28.58,31.27);
+      CAP('#c9',31.49,36.72);
+      FI('#s3',28.08);
+      PUSH('#s3 .scene-inner',28.08,9.44);
+      R('#s3 .rv',28.33);
+      FO('#s3',37.22);
+      WIPE(28.08);
+      CAP('#c10',38.02,40.36);
+      CAP('#c11',40.58,43.35);
+      CAP('#c12',43.57,47.73);
+      CAP('#c13',47.95,54.54);
+      FI('#s4',37.52);
+      PUSH('#s4 .scene-inner',37.52,17.82);
+      R('#s4 .rv',37.77);
+      IT('#s4i0',40.53);
+      IT('#s4i1',43.52);
+      IT('#s4i2',47.90);
+      FO('#s4',55.04);
+      CAP('#c14',55.84,59.06);
+      CAP('#c15',59.28,63.26);
+      CAP('#c16',63.48,67.50);
+      CAP('#c17',67.72,71.03);
+      CAP('#c18',71.03,73.88);
+      FI('#s5',55.34);
+      PUSH('#s5 .scene-inner',55.34,19.34);
+      R('#s5 .rv',55.59);
+      IT('#s5i0',59.23);
+      IT('#s5i1',63.43);
+      IT('#s5i2',67.67);
+      FO('#s5',74.38);
+      CAP('#c19',75.18,77.51);
+      CAP('#c20',77.73,80.63);
+      CAP('#c21',80.63,83.41);
+      CAP('#c22',83.63,87.71);
+      FI('#s6',74.68);
+      PUSH('#s6 .scene-inner',74.68,13.84);
+      R('#s6 .rv',74.93);
+      IT('#s6i0',75.13);
+      IT('#s6i1',77.68);
+      IT('#s6i2',83.58);
+      FO('#s6',88.21);
+      CAP('#c23',89.01,91.51);
+      CAP('#c24',91.51,95.04);
+      CAP('#c25',95.26,98.78);
+      CAP('#c26',98.78,101.68);
+      FI('#s7',88.51);
+      PUSH('#s7 .scene-inner',88.51,13.97);
+      R('#s7 .rv',88.76);
+      IT('#s7i0',88.96);
+      IT('#s7i1',89.16);
+      IT('#s7i2',95.21);
+      FO('#s7',102.18);
+      CAP('#c27',102.98,107.50);
+      CAP('#c28',107.50,112.60);
+      CAP('#c29',112.82,116.03);
+      CAP('#c30',116.25,120.48);
+      CAP('#c31',120.48,122.67);
+      FI('#s8',102.48);
+      PUSH('#s8 .scene-inner',102.48,20.99);
+      R('#s8 .rv',102.73);
+      IT('#s8i0',102.93);
+      IT('#s8i1',112.77);
+      FO('#s8',123.17);
+      CAP('#c32',123.97,128.00);
+      CAP('#c33',128.22,131.10);
+      FI('#s9',123.47);
+      PUSH('#s9 .scene-inner',123.47,8.43);
+      R('#s9 .rv',123.72);
+      FO('#s9',131.60);
+      WIPE(123.47);
+      CAP('#c34',132.40,137.31);
+      CAP('#c35',137.53,141.95);
+      CAP('#c36',142.17,149.14);
+      CAP('#c37',149.36,155.04);
+      CAP('#c38',155.26,159.54);
+      FI('#s10',131.90);
+      PUSH('#s10 .scene-inner',131.90,28.44);
+      R('#s10 .rv',132.15);
+      IT('#s10i0',132.35);
+      IT('#s10i1',132.55);
+      IT('#s10i2',137.48);
+      IT('#s10i3',142.12);
+      IT('#s10i4',149.31);
+      IT('#s10i5',155.21);
+      FILL('#s10fill',132.35,155.81);
+      FO('#s10',160.04);
+      CAP('#c39',160.84,164.10);
+      CAP('#c40',164.32,168.73);
+      CAP('#c41',168.73,170.32);
+      CAP('#c42',170.54,175.16);
+      CAP('#c43',175.16,176.03);
+      FI('#s11',160.34);
+      PUSH('#s11 .scene-inner',160.34,16.49);
+      R('#s11 .rv',160.59);
+      CNT('#s11cnt',6,161.04,2.2);
+      FO('#s11',176.53);
+      CAP('#c44',177.33,181.58);
+      CAP('#c45',181.58,184.21);
+      CAP('#c46',184.43,188.59);
+      CAP('#c47',188.59,190.78);
+      CAP('#c48',191.00,193.27);
+      CAP('#c49',193.27,196.86);
+      CAP('#c50',197.08,201.65);
+      CAP('#c51',201.87,207.60);
+      FI('#s12',176.83);
+      PUSH('#s12 .scene-inner',176.83,31.57);
+      R('#s12 .rv',177.08);
+      IT('#s12i0',184.38);
+      IT('#s12i1',190.95);
+      IT('#s12i2',197.03);
+      FO('#s12',208.10);
+      CAP('#c52',208.90,211.20);
+      CAP('#c53',211.42,213.98);
+      CAP('#c54',213.98,217.36);
+      CAP('#c55',217.58,220.81);
+      CAP('#c56',220.81,224.40);
+      CAP('#c57',224.62,225.40);
+      CAP('#c58',225.40,228.31);
+      CAP('#c59',228.31,231.16);
+      FI('#s13',208.40);
+      PUSH('#s13 .scene-inner',208.40,23.56);
+      R('#s13 .rv',208.65);
+      IT('#s13i0',211.37);
+      IT('#s13i1',217.53);
+      IT('#s13i2',224.57);
+      FO('#s13',231.66);
+      CAP('#c60',232.46,234.70);
+      CAP('#c61',234.92,237.98);
+      FI('#s14',231.96);
+      PUSH('#s14 .scene-inner',231.96,6.82);
+      R('#s14 .rv',232.21);
+      FO('#s14',238.48);
+      WIPE(231.96);
+      CAP('#c62',239.28,243.36);
+      CAP('#c63',243.58,248.73);
+      CAP('#c64',248.95,252.18);
+      CAP('#c65',252.18,254.92);
+      FI('#s15',238.78);
+      PUSH('#s15 .scene-inner',238.78,16.94);
+      R('#s15 .rv',239.03);
+      IT('#s15i0',239.23);
+      IT('#s15i1',243.53);
+      IT('#s15i2',248.90);
+      FO('#s15',255.42);
+      CAP('#c66',256.22,257.75);
+      CAP('#c67',257.97,260.37);
+      CAP('#c68',260.59,263.52);
+      CAP('#c69',263.74,266.22);
+      CAP('#c70',266.22,270.51);
+      CAP('#c71',270.73,273.37);
+      FI('#s16',255.72);
+      PUSH('#s16 .scene-inner',255.72,18.45);
+      R('#s16 .rv',255.97);
+      IT('#s16i0',257.92);
+      IT('#s16i1',260.54);
+      IT('#s16i2',263.69);
+      IT('#s16i3',270.68);
+      FO('#s16',273.87);
+      CAP('#c72',274.67,278.92);
+      CAP('#c73',279.14,284.34);
+      FI('#s17',274.17);
+      PUSH('#s17 .scene-inner',274.17,10.98);
+      R('#s17 .rv',274.42);
+      IT('#s17i0',274.62);
+      IT('#s17i1',274.82);
+      IT('#s17i2',279.09);
+      FO('#s17',284.84);
+      CAP('#c74',285.64,286.99);
+      CAP('#c75',287.21,290.95);
+      FI('#s18',285.14);
+      PUSH('#s18 .scene-inner',285.14,6.61);
+      R('#s18 .rv',285.39);
+      FO('#s18',291.45);
+      WIPE(285.14);
+      CAP('#c76',292.25,296.97);
+      CAP('#c77',297.19,301.13);
+      CAP('#c78',301.35,305.01);
+      CAP('#c79',305.01,308.42);
+      FI('#s19',291.75);
+      PUSH('#s19 .scene-inner',291.75,17.47);
+      R('#s19 .rv',292.00);
+      IT('#s19i0',292.20);
+      IT('#s19i1',297.14);
+      IT('#s19i2',301.30);
+      BAR('#s19b0',80.0,292.30);
+      BAR('#s19b1',100.0,297.24);
+      FO('#s19',308.92);
+      CAP('#c80',309.72,311.19);
+      CAP('#c81',311.41,316.53);
+      CAP('#c82',316.53,321.04);
+      CAP('#c83',321.26,323.81);
+      FI('#s20',309.22);
+      PUSH('#s20 .scene-inner',309.22,15.39);
+      R('#s20 .rv',309.47);
+      IT('#s20i0',311.36);
+      IT('#s20i1',311.56);
+      IT('#s20i2',321.21);
+      IT('#s20i3',321.41);
+      FO('#s20',324.31);
+      CAP('#c84',325.11,327.17);
+      CAP('#c85',327.39,332.19);
+      CAP('#c86',332.41,336.06);
+      CAP('#c87',336.28,341.37);
+      FI('#s21',324.61);
+      PUSH('#s21 .scene-inner',324.61,17.56);
+      R('#s21 .rv',324.86);
+      IT('#s21i0',327.34);
+      IT('#s21i1',332.36);
+      IT('#s21i2',336.23);
+      FO('#s21',341.87);
+      CAP('#c88',342.67,345.11);
+      CAP('#c89',345.11,347.87);
+      CAP('#c90',348.09,352.42);
+      CAP('#c91',352.64,357.49);
+      FI('#s22',342.17);
+      PUSH('#s22 .scene-inner',342.17,16.12);
+      R('#s22 .rv',342.42);
+      IT('#s22i0',342.62);
+      IT('#s22i1',348.04);
+      IT('#s22i2',352.59);
+      FO('#s22',357.99);
+      CAP('#c92',358.79,362.63);
+      CAP('#c93',362.85,365.75);
+      CAP('#c94',365.75,368.64);
+      FI('#s23',358.29);
+      PUSH('#s23 .scene-inner',358.29,11.15);
+      R('#s23 .rv',358.54);
+      IT('#s23i0',358.74);
+      IT('#s23i1',358.94);
+      IT('#s23i2',362.80);
+      FO('#s23',369.14);
+      CAP('#c95',369.94,372.34);
+      FI('#s24',369.44);
+      PUSH('#s24 .scene-inner',369.44,3.70);
+      R('#s24 .rv',369.69);
+      FO('#s24',372.84);
+      WIPE(369.44);
+      CAP('#c96',373.64,375.26);
+      CAP('#c97',375.48,379.91);
+      CAP('#c98',379.91,382.31);
+      CAP('#c99',382.53,387.68);
+      CAP('#c100',387.90,391.44);
+      FI('#s25',373.14);
+      PUSH('#s25 .scene-inner',373.14,19.10);
+      R('#s25 .rv',373.39);
+      IT('#s25i0',375.43);
+      IT('#s25i1',375.63);
+      IT('#s25i2',382.48);
+      IT('#s25i3',387.85);
+      FO('#s25',391.94);
+      CAP('#c101',392.74,394.64);
+      CAP('#c102',394.86,399.62);
+      CAP('#c103',399.84,404.97);
+      CAP('#c104',405.19,409.27);
+      FI('#s26',392.24);
+      PUSH('#s26 .scene-inner',392.24,17.83);
+      R('#s26 .rv',392.49);
+      IT('#s26i0',394.81);
+      IT('#s26i1',399.79);
+      IT('#s26i2',405.14);
+      FO('#s26',409.77);
+      CAP('#c105',410.57,411.68);
+      CAP('#c106',411.90,414.49);
+      CAP('#c107',414.49,417.37);
+      CAP('#c108',417.59,421.67);
+      CAP('#c109',421.89,426.78);
+      FI('#s27',410.07);
+      PUSH('#s27 .scene-inner',410.07,17.51);
+      R('#s27 .rv',410.32);
+      CNT('#s27cnt',7,410.77,2.2);
+      FO('#s27',427.28);
+      CAP('#c110',428.08,430.55);
+      FI('#s28',427.58);
+      PUSH('#s28 .scene-inner',427.58,3.76);
+      R('#s28 .rv',427.83);
+      FO('#s28',431.05);
+      WIPE(427.58);
+      CAP('#c111',431.85,434.01);
+      CAP('#c112',434.23,436.26);
+      CAP('#c113',436.26,440.56);
+      CAP('#c114',440.78,446.43);
+      CAP('#c115',446.65,449.84);
+      FI('#s29',431.35);
+      PUSH('#s29 .scene-inner',431.35,19.29);
+      R('#s29 .rv',431.60);
+      IT('#s29i0',434.18);
+      IT('#s29i1',440.73);
+      IT('#s29i2',446.60);
+      FO('#s29',450.34);
+      CAP('#c116',451.14,455.09);
+      CAP('#c117',455.31,459.95);
+      CAP('#c118',460.17,463.40);
+      CAP('#c119',463.62,467.75);
+      CAP('#c120',467.97,471.36);
+      FI('#s30',450.64);
+      PUSH('#s30 .scene-inner',450.64,21.52);
+      R('#s30 .rv',450.89);
+      IT('#s30i0',455.26);
+      IT('#s30i1',460.12);
+      IT('#s30i2',463.57);
+      FO('#s30',471.86);
+      CAP('#c121',472.66,473.94);
+      FI('#s31',472.16);
+      PUSH('#s31 .scene-inner',472.16,2.58);
+      R('#s31 .rv',472.41);
+      FO('#s31',474.44);
+      WIPE(472.16);
+      CAP('#c122',475.24,477.19);
+      CAP('#c123',477.41,480.42);
+      CAP('#c124',480.64,484.46);
+      CAP('#c125',484.68,488.86);
+      CAP('#c126',489.08,492.25);
+      CAP('#c127',492.47,496.68);
+      FI('#s32',474.74);
+      PUSH('#s32 .scene-inner',474.74,22.74);
+      R('#s32 .rv',474.99);
+      IT('#s32i0',477.36);
+      IT('#s32i1',480.59);
+      IT('#s32i2',484.63);
+      IT('#s32i3',489.03);
+      IT('#s32i4',492.42);
+      FO('#s32',497.18);
+      CAP('#c128',497.98,499.75);
+      CAP('#c129',499.97,503.89);
+      CAP('#c130',504.11,507.28);
+      CAP('#c131',507.28,511.02);
+      CAP('#c132',511.24,514.49);
+      FI('#s33',497.48);
+      PUSH('#s33 .scene-inner',497.48,17.82);
+      R('#s33 .rv',497.73);
+      IT('#s33i0',499.92);
+      IT('#s33i1',504.06);
+      FO('#s33',514.99);
+      CAP('#c133',515.79,518.13);
+      CAP('#c134',518.35,521.20);
+      CAP('#c135',521.20,524.83);
+      CAP('#c136',525.05,528.97);
+      FI('#s34',515.29);
+      PUSH('#s34 .scene-inner',515.29,14.48);
+      R('#s34 .rv',515.54);
+      IT('#s34i0',515.74);
+      IT('#s34i1',518.30);
+      IT('#s34i2',525.00);
+      FO('#s34',529.47);
+      CAP('#c137',530.27,532.78);
+      FI('#s35',529.77);
+      PUSH('#s35 .scene-inner',529.77,3.81);
+      R('#s35 .rv',530.02);
+      FO('#s35',533.28);
+      WIPE(529.77);
+      CAP('#c138',534.08,535.52);
+      CAP('#c139',535.74,538.36);
+      CAP('#c140',538.58,540.74);
+      CAP('#c141',540.96,543.82);
+      CAP('#c142',543.82,546.53);
+      FI('#s36',533.58);
+      PUSH('#s36 .scene-inner',533.58,13.75);
+      R('#s36 .rv',533.83);
+      IT('#s36i0',535.69);
+      IT('#s36i1',538.53);
+      IT('#s36i2',540.91);
+      FO('#s36',547.03);
+      CAP('#c143',547.83,548.63);
+      CAP('#c144',548.85,555.84);
+      CAP('#c145',556.06,558.85);
+      CAP('#c146',559.07,564.36);
+      CAP('#c147',564.58,566.98);
+      CAP('#c148',567.20,570.12);
+      FI('#s37',547.33);
+      PUSH('#s37 .scene-inner',547.33,23.58);
+      R('#s37 .rv',547.58);
+      IT('#s37i0',548.80);
+      IT('#s37i1',556.01);
+      IT('#s37i2',559.02);
+      IT('#s37i3',564.53);
+      IT('#s37i4',567.15);
+      FO('#s37',570.62);
+      CAP('#c149',571.42,573.15);
+      CAP('#c150',573.37,576.01);
+      CAP('#c151',576.01,579.19);
+      CAP('#c152',579.41,582.58);
+      CAP('#c153',582.80,585.20);
+      CAP('#c154',585.20,587.71);
+      FI('#s38',570.92);
+      PUSH('#s38 .scene-inner',570.92,29.08);
+      R('#s38 .rv',571.17);
+      FO('#s38',599.70);
+      CHL('#chl0',0.00,28.08);
+      CHL('#chl1',28.08,123.47);
+      CHL('#chl2',123.47,231.96);
+      CHL('#chl3',231.96,285.14);
+      CHL('#chl4',285.14,369.44);
+      CHL('#chl5',369.44,427.58);
+      CHL('#chl6',427.58,472.16);
+      CHL('#chl7',472.16,529.77);
+      CHL('#chl8',529.77,600.00);
+      tl.to('#bar', { width: '100%', duration: 600.00, ease: 'none' }, 0);
+      tl.to('#orb1', { x: 520, y: 260, duration: 60, repeat: 9, yoyo: true, ease: 'sine.inOut' }, 0);
+      tl.to('#orb2', { x: -480, y: -220, duration: 75, repeat: 7, yoyo: true, ease: 'sine.inOut' }, 0);
+      tl.to('#grid', { backgroundPosition: '0px -3840px', duration: 600.00, ease: 'none' }, 0);
+      window.__timelines['main'] = tl;
+      tl.seek(0);
+    </script>
+  </div>
+<script src="./capture-stability.js"></script>
+</body>
+</html>

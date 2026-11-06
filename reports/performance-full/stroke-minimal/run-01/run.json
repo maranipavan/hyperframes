@@ -1,0 +1,156 @@
+{
+  "command": [
+    "node",
+    "scripts/perf/stroke-raster-repro.mjs",
+    "run",
+    "reports/performance-full/stroke-minimal/run-01"
+  ],
+  "startedAt": "2026-10-20T16:27:56.793Z",
+  "budgetMs": 290000,
+  "sampleCount": 12,
+  "node": "v22.23.3",
+  "platform": "linux",
+  "arch": "arm64",
+  "puppeteer": "25.8.0",
+  "browserPath": "/usr/bin/chromium",
+  "args": [
+    "--no-sandbox",
+    "--disable-setuid-sandbox",
+    "--disable-dev-shm-usage",
+    "--enable-features=CanvasDrawElement",
+    "--enable-webgl",
+    "--ignore-gpu-blocklist",
+    "--use-gl=angle",
+    "--use-angle=swiftshader",
+    "--enable-unsafe-swiftshader",
+    "--font-render-hinting=none",
+    "--force-color-profile=srgb",
+    "--force-device-scale-factor=1",
+    "--window-size=1920,1080",
+    "--disable-background-timer-throttling",
+    "--disable-backgrounding-occluded-windows",
+    "--disable-renderer-backgrounding",
+    "--disable-background-media-suspend",
+    "--disable-breakpad",
+    "--disable-component-extensions-with-background-pages",
+    "--disable-default-apps",
+    "--disable-extensions",
+    "--disable-hang-monitor",
+    "--disable-ipc-flooding-protection",
+    "--disable-popup-blocking",
+    "--disable-sync",
+    "--disable-component-update",
+    "--disable-domain-reliability",
+    "--disable-print-preview",
+    "--no-pings",
+    "--no-zygote",
+    "--force-gpu-mem-available-mb=11987",
+    "--disk-cache-size=268435456",
+    "--disable-features=AudioServiceOutOfProcess,IsolateOrigins,site-per-process,Translate,BackForwardCache,IntensiveWakeUpThrottling",
+    "--autoplay-policy=no-user-gesture-required",
+    "--disable-gpu-compositing"
+  ],
+  "screenshotOptions": {
+    "format": "png",
+    "fromSurface": true,
+    "captureBeyondViewport": false,
+    "optimizeForSpeed": false,
+    "clip": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "scale": 1
+    }
+  },
+  "viewport": {
+    "width": 1920,
+    "height": 1080,
+    "deviceScaleFactor": 1
+  },
+  "sources": {
+    "packages/.debug/34924e85-649b-4baa-867b-834a88350af2/compiled/index.html": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+    "scripts/perf/stroke-raster-repro.mjs": "4a4cf80c0431f96107e013410cf89e81335a62ac207260980ae5ec4cd42ec4f3",
+    "packages/engine/dist/services/browserManager.js": "81fa01a1e777d32421186d5c1b582e3b4e776d62d8fa6e4d85c181c10e8db2b6",
+    "packages/engine/dist/services/screenshotService.js": "f6868e40e419d54be3be09df2b36a864f46bae5a723bfff61e6bbd0063480256",
+    "packages/engine/dist/utils/alphaBlit.js": "ba641d3391379c20637e58862b82d11a334a9d5282e165ac6130629e6a40a74e",
+    "bun.lock": "5405cf195df12a92a59ce74652292fbd6e90a55185d339acc97a14ba9f5da375",
+    "packages/engine/package.json": "687ca960e5ea4f6f54e9dcde075fe2a8630adb206520d27444e804e223684af2",
+    "reports/performance-full/capture-repeat-held-fonts-845/run.json": "86b27906970b9f2f665c48be2066a4ad5d67f6e4d8c6c3880ca8ceebc15c2d4b",
+    "reports/performance-full/capture-repeat-held-fonts-845/summary.json": "c494a4f6f60aba34e94952a32a986d365d0c897e468d5a5bb847ce88c2607894",
+    "reports/performance-full/capture-repeat-held-fonts-845/repeat-1/frames.json": "9b82d7e5c61777237074e4559c4467d12f3c75e053f6659f94e5f81a6ffcacf8",
+    "reports/performance-full/capture-repeat-held-fonts-845/repeat-2/frames.json": "ef2cf65dc8d38f0eee8b68fe196b82dbc97134aede2a3fa5b06b2fb88049bfca"
+  },
+  "fontCssSha256": "1a6592ce06ec0b96da4e2f134f550184be71ee8c9cffafcb5520b0f0f6a5abbd",
+  "fontBytesSha256": "069008d5eb967fdc875713e1fac7017caa7c80e22ee60fd04d161ed8671a9281",
+  "targetCssSha256": "609bced98df7ab233c7a922f82e9296113d993c53e35d037a2a26aff0ce9b7a5",
+  "minimalHtmlSha256": "f6cd06d6c8ad3dd669140b03db6fb9b61bf93c61d4e9b7559f39e16c3802faca",
+  "extractedSelectors": [
+    "*",
+    "html, body",
+    "body",
+    "#root",
+    ".scene",
+    ".scene-inner",
+    ".chapter",
+    ".ch-num"
+  ],
+  "parentHeight": 353.859375,
+  "reference": [
+    {
+      "id": "s3",
+      "className": "clip scene",
+      "rect": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "transform": "none",
+      "opacity": "0.5732",
+      "display": "flex",
+      "visibility": "visible",
+      "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "stroke": "0px rgb(244, 247, 251)",
+      "fontsStatus": "loaded"
+    },
+    {
+      "id": "",
+      "className": "scene-inner chapter",
+      "rect": [
+        179.843994140625,
+        320.527099609375,
+        1560.31201171875,
+        353.93017578125
+      ],
+      "transform": "matrix(1.0002, 0, 0, 1.0002, 0, 0)",
+      "opacity": "1",
+      "display": "flex",
+      "visibility": "visible",
+      "font": "16px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "stroke": "0px rgb(244, 247, 251)",
+      "fontsStatus": "loaded"
+    },
+    {
+      "id": "",
+      "className": "ch-num",
+      "rect": [
+        179.843994140625,
+        326.4501647949219,
+        385.1395263671875,
+        342.0683898925781
+      ],
+      "transform": "none",
+      "opacity": "1",
+      "display": "block",
+      "visibility": "visible",
+      "font": "800 380px / 342px Inter, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "stroke": "3px rgba(255, 122, 156, 0.55)",
+      "fontsStatus": "loaded"
+    }
+  ],
+  "sourceBrowser": "Chrome/155.0.8059.79",
+  "plan": "Two repeats of plain hide/reveal, without/with hint on scaling parent; if both plain no-hint runs stable, two repeats of 830..844 pre-roll then hold 845 without/with parent hint. At most eight fresh browsers.",
+  "historyDerivation": "FI power1.out 0.25s at 28.08; PUSH 1 -> 1.022 over 9.44s. Four-decimal style values. Pre-start display:none models engine clip visibility; source scripts never execute.",
+  "scene": "Only root, opacity ancestor, scaling flex parent, outlined 01; inline normal variable Inter; no scripts/animation/timers/media/network. Harness drives discrete style changes before hold only."
+}

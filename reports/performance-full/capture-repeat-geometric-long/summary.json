@@ -1,0 +1,496 @@
+{
+  "compiled": "packages/.debug/34924e85-649b-4baa-867b-834a88350af2/compiled",
+  "compiledSha256": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+  "start": 810,
+  "end": 900,
+  "preRollStart": 0,
+  "mode": "geometric",
+  "browsers": [
+    "Chrome/155.0.8059.79",
+    "Chrome/155.0.8059.79"
+  ],
+  "effectiveCaptureBeyondViewport": [
+    false,
+    false
+  ],
+  "format": "png",
+  "captureMode": "screenshot",
+  "note": "No encoder; fresh browsers, frozen compiled HTML. PNG alpha capture and diagnostic state reads differ from streaming JPEG production.",
+  "differingFrames": [
+    847,
+    848
+  ],
+  "differingStateFrames": [],
+  "comparisons": [
+    {
+      "frame": 810,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 811,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 812,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 813,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 814,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 815,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 816,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 817,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 818,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 819,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 820,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 821,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 822,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 823,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 824,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 825,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 826,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 827,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 828,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 829,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 831,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 832,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 833,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 834,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 835,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 836,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 837,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 838,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 839,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 840,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 841,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 842,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 843,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 844,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 845,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 846,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 847,
+      "pixelsEqual": false,
+      "stateEqual": true,
+      "changedPixels": 5134,
+      "maxChannelError": 115,
+      "mse": 3.528155864197531,
+      "bounds": {
+        "left": 193,
+        "top": 353,
+        "right": 567,
+        "bottom": 641
+      },
+      "psnr": 42.655325980516395
+    },
+    {
+      "frame": 848,
+      "pixelsEqual": false,
+      "stateEqual": true,
+      "changedPixels": 5136,
+      "maxChannelError": 127,
+      "mse": 4.2764093042695475,
+      "bounds": {
+        "left": 193,
+        "top": 353,
+        "right": 567,
+        "bottom": 641
+      },
+      "psnr": 41.82001095089218
+    },
+    {
+      "frame": 849,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 850,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 851,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 852,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 853,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 854,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 855,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 856,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 857,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 858,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 859,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 860,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 861,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 862,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 863,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 864,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 865,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 866,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 867,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 868,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 869,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 870,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 871,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 872,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 873,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 874,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 875,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 876,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 877,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 878,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 879,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 880,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 881,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 882,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 883,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 884,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 885,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 886,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 887,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 888,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 889,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 890,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 891,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 892,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 893,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 894,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 895,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 896,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 897,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 898,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 899,
+      "pixelsEqual": true,
+      "stateEqual": true
+    }
+  ]
+}

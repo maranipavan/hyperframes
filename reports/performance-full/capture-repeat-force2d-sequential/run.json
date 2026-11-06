@@ -1,0 +1,19 @@
+{
+  "args": [
+    "run",
+    "reports/performance-full/capture-repeat-force2d-sequential",
+    "830",
+    "900",
+    "830",
+    "force2d"
+  ],
+  "compiledSha256": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+  "scriptSha256": "3134f2c994b8019a05f20c84886268d2cdc473a53687d043a46842abab29fa59",
+  "browserExecutable": "/usr/bin/chromium",
+  "start": 830,
+  "end": 900,
+  "preRollStart": 830,
+  "mode": "force2d",
+  "format": "png",
+  "status": "started; summary.json required for a completed result"
+}

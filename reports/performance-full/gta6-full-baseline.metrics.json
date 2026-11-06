@@ -1,0 +1,33 @@
+{
+  "label": "gta6-full-baseline",
+  "exitCode": 0,
+  "wallSeconds": 3068.212,
+  "peakTreeRssMb": 600.6,
+  "peakCpuSeconds": 1183.33,
+  "samples": 3067,
+  "command": [
+    "node",
+    "packages/cli/dist/cli.js",
+    "render",
+    "/tmp/gta6-full-baseline",
+    "--output",
+    "/tmp/gta6-full-baseline.mp4",
+    "--fps",
+    "30",
+    "--quality",
+    "draft",
+    "--format",
+    "mp4",
+    "--workers",
+    "1",
+    "--no-browser-gpu",
+    "--experimental-fast-capture=false",
+    "--debug",
+    "--protocol-timeout",
+    "600000",
+    "--browser-timeout",
+    "120"
+  ],
+  "log": "/tmp/gta6-full-baseline.log",
+  "output": "/tmp/gta6-full-baseline.mp4"
+}

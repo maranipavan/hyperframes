@@ -1,0 +1,2 @@
+96a0773c10f3f96d7db5ab9702ac9d7dfb3eb97d08bddbd8c3ab0fb8e9ff0c28  /tmp/gta6-full-baseline.mp4
+ac30c58af2dfd273831a551f6d3aa844c9dc3d662925e0b786f8ca1397086213  /tmp/gta6-full-grid-texture.mp4

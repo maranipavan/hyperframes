@@ -1,0 +1,20 @@
+{
+  "command": [
+    "node",
+    "packages/cli/dist/cli.js",
+    "lint",
+    "reports/performance-full/stability-active-30"
+  ],
+  "exitCode": 0,
+  "timedOut": false,
+  "wallSeconds": 1.5039110188372433,
+  "reapedUserCpuSeconds": 1.585491,
+  "reapedSystemCpuSeconds": 0.118837,
+  "reapedCpuPercentOneCore": 113.32638558082448,
+  "sampledProcessCpuSecondsLowerBound": 1.69,
+  "sampledPeakRssSumMiB": 115.61328125,
+  "rssCaveat": "PPID tree including reparented known children; summed RSS double-counts shared pages; 500ms samples miss transient peaks",
+  "cpuCaveat": "rusage includes reaped child descendants; sampled CPU is a separate lower bound including discovered processes",
+  "peakLiveProcessCount": 1,
+  "samples": 4
+}

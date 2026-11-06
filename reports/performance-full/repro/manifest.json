@@ -1,0 +1,21 @@
+{
+  "source": "gta6_countdown_10min.html",
+  "sourceSha256": "bca316b923831e3c26731cd8ed64e7d8827d0b67a798f998db5954f3ccbd8abd",
+  "duration": 600,
+  "projects": {
+    "baseline": {
+      "htmlSha256": "bca316b923831e3c26731cd8ed64e7d8827d0b67a798f998db5954f3ccbd8abd",
+      "assets": {
+        "voiceover.mp3": "6f9bd4414fa01eeafb2aad4559b5ef2c0cfb32cfafe835a7395ec3f69865e60f",
+        "music_bed.mp3": "bd39f435e965ae60c2d6c6112e4750dedcd20b3a7f630dc2b47b8a170d996c04"
+      }
+    },
+    "texture": {
+      "htmlSha256": "9728753a8498bd1c878cc7c4b067be9c751df97ebf0a810a4379cfaa431bd4ae",
+      "assets": {
+        "voiceover.mp3": "6f9bd4414fa01eeafb2aad4559b5ef2c0cfb32cfafe835a7395ec3f69865e60f",
+        "music_bed.mp3": "bd39f435e965ae60c2d6c6112e4750dedcd20b3a7f630dc2b47b8a170d996c04"
+      }
+    }
+  }
+}

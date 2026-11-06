@@ -1,0 +1,21 @@
+{
+  "command": [
+    "node",
+    "packages/cli/dist/cli.js",
+    "check",
+    "reports/performance-full/stability-active-30",
+    "--json"
+  ],
+  "exitCode": 0,
+  "timedOut": false,
+  "wallSeconds": 10.523820445872843,
+  "reapedUserCpuSeconds": 15.621188,
+  "reapedSystemCpuSeconds": 1.9200309999999998,
+  "reapedCpuPercentOneCore": 166.6810935270108,
+  "sampledProcessCpuSecondsLowerBound": 16.64,
+  "sampledPeakRssSumMiB": 1433.2421875,
+  "rssCaveat": "PPID tree including reparented known children; summed RSS double-counts shared pages; 500ms samples miss transient peaks",
+  "cpuCaveat": "rusage includes reaped child descendants; sampled CPU is a separate lower bound including discovered processes",
+  "peakLiveProcessCount": 10,
+  "samples": 22
+}

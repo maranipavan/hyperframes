@@ -1,0 +1,20 @@
+{
+  "args": [
+    "run",
+    "reports/performance-full/capture-repeat-jpeg-preroll",
+    "830",
+    "870",
+    "0",
+    "baseline",
+    "jpeg"
+  ],
+  "compiledSha256": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+  "scriptSha256": "2c8172fc67b666b51d8898872aab74b9b644d27f11e3cca3684b273d811137ff",
+  "browserExecutable": "/usr/bin/chromium",
+  "start": 830,
+  "end": 870,
+  "preRollStart": 0,
+  "mode": "baseline",
+  "format": "jpeg",
+  "status": "started; summary.json required for a completed result"
+}

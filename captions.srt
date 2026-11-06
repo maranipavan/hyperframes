@@ -1,0 +1,620 @@
+1
+00:00:00,500 --> 00:00:01,636
+31 days.
+
+2
+00:00:01,856 --> 00:00:05,696
+That is how long is left until GTA 6 is scheduled to launch.
+
+3
+00:00:05,916 --> 00:00:09,164
+And this week, Rockstar released the final launch trailer.
+
+4
+00:00:09,384 --> 00:00:12,903
+In this video, I will walk you through what is confirmed,
+
+5
+00:00:12,903 --> 00:00:16,792
+what is still rumor, and exactly what to do before November 19.
+
+6
+00:00:18,092 --> 00:00:21,580
+Today is October 19. Launch day is November 19.
+
+7
+00:00:21,800 --> 00:00:25,064
+That is 31 days, which is four weeks and three days.
+
+8
+00:00:25,284 --> 00:00:27,284
+So let us make every one of them count.
+
+9
+00:00:28,584 --> 00:00:31,272
+First, the news driving today's conversation.
+
+10
+00:00:31,492 --> 00:00:36,724
+On October 15, Rockstar Games released the launch trailer for GTA 6.
+
+11
+00:00:38,024 --> 00:00:40,360
+Here is what is confirmed from that release.
+
+12
+00:00:40,580 --> 00:00:43,348
+The date is November 19, 2026.
+
+13
+00:00:43,568 --> 00:00:47,728
+The launch platforms are PS5 and Xbox Series X|S.
+
+14
+00:00:47,948 --> 00:00:54,540
+And Rockstar says all of the trailer footage was captured on a standard PS5, not a PS5 Pro.
+
+15
+00:00:55,840 --> 00:00:59,056
+The trailer leans into its two leads, Jason and Lucia.
+
+16
+00:00:59,276 --> 00:01:03,260
+Press coverage says Jason has a military past and is struggling to find work.
+
+17
+00:01:03,480 --> 00:01:07,496
+Lucia calls him from jail, and the two reconnect before their criminal adventure.
+
+18
+00:01:07,716 --> 00:01:11,033
+Some outlets call the tone more intimate than earlier trailers,
+
+19
+00:01:11,033 --> 00:01:13,876
+but that is interpretation, not an official statement.
+
+20
+00:01:15,176 --> 00:01:17,512
+The story is set in the state of Leonida.
+
+21
+00:01:17,732 --> 00:01:20,627
+Rockstar's description says an easy score goes wrong,
+
+22
+00:01:20,627 --> 00:01:23,412
+and a criminal conspiracy spreads across the state.
+
+23
+00:01:23,632 --> 00:01:27,712
+Its tagline promises the darkest side of the sunniest place in America.
+
+24
+00:01:29,012 --> 00:01:31,510
+The trailer also packs in big set pieces,
+
+25
+00:01:31,510 --> 00:01:35,044
+from helicopter chaos to a rooftop jump into a hotel pool.
+
+26
+00:01:35,264 --> 00:01:38,778
+One report mentions a sweat system tied to how hard characters dance,
+
+27
+00:01:38,778 --> 00:01:41,680
+though it is unclear whether that appears in the trailer.
+
+28
+00:01:42,980 --> 00:01:47,498
+Music fans should note the debut of a new song, Flower in a Hurricane,
+
+29
+00:01:47,498 --> 00:01:52,596
+by Justice, featuring Tame Impala, SZA, and King Gizzard and the Lizard Wizard.
+
+30
+00:01:52,816 --> 00:01:56,032
+Coverage says it will be on the official soundtrack album.
+
+31
+00:01:56,252 --> 00:02:00,479
+And reports say the trailer passed one million YouTube views in about half an hour,
+
+32
+00:02:00,479 --> 00:02:02,668
+though early view counts can be unreliable.
+
+33
+00:02:03,968 --> 00:02:08,000
+To understand why this launch feels so big, look at the road that led here.
+
+34
+00:02:08,220 --> 00:02:11,100
+This game has been in development for more than a decade.
+
+35
+00:02:12,400 --> 00:02:17,312
+Rockstar revealed the first trailer in December 2023, aiming for 2025.
+
+36
+00:02:17,532 --> 00:02:21,948
+In May 2025, the date moved to May 26, 2026.
+
+37
+00:02:22,168 --> 00:02:29,144
+Then on November 6, 2025, Take-Two announced another delay, this time to November 19, 2026.
+
+38
+00:02:29,364 --> 00:02:35,044
+On May 21, 2026, Take-Two's CEO confirmed that date again on an earnings call.
+
+39
+00:02:35,264 --> 00:02:39,536
+And on October 15, 2026, the launch trailer arrived.
+
+40
+00:02:40,836 --> 00:02:44,100
+The second delay pushed the game back by roughly six months.
+
+41
+00:02:44,320 --> 00:02:48,731
+Rockstar said the extra time would let the team finish the game to its usual standard,
+
+42
+00:02:48,731 --> 00:02:50,320
+and it apologized for the wait.
+
+43
+00:02:50,540 --> 00:02:55,162
+At the time, Take-Two's shares fell by nearly 30 dollars in after-hours trading,
+
+44
+00:02:55,162 --> 00:02:56,028
+then rebounded.
+
+45
+00:02:57,328 --> 00:03:01,579
+Why do huge games slip? Rockstar has only said it needs more time to polish,
+
+46
+00:03:01,579 --> 00:03:04,208
+but we can look at why this happens in general.
+
+47
+00:03:04,428 --> 00:03:08,592
+Open-world games have enormous amounts of content that must all work together,
+
+48
+00:03:08,592 --> 00:03:10,780
+so late-stage bug fixing can take months.
+
+49
+00:03:11,000 --> 00:03:13,274
+Performance tuning is another big piece,
+
+50
+00:03:13,274 --> 00:03:16,856
+especially making sure the game runs smoothly on base consoles.
+
+51
+00:03:17,076 --> 00:03:21,652
+And console makers require final testing and certification before any game can ship.
+
+52
+00:03:21,872 --> 00:03:27,600
+None of this is a claim about the specifics of GTA 6. It is general industry context.
+
+53
+00:03:28,900 --> 00:03:31,204
+Since then, the messaging has been consistent.
+
+54
+00:03:31,424 --> 00:03:33,977
+In May, Take-Two's CEO, Strauss Zelnick,
+
+55
+00:03:33,977 --> 00:03:37,360
+said the company feels really good about November 19.
+
+56
+00:03:37,580 --> 00:03:40,806
+He also said that Take-Two will still market the game heavily,
+
+57
+00:03:40,806 --> 00:03:44,396
+though with less reliance on network television ads than in the past.
+
+58
+00:03:44,616 --> 00:03:45,399
+And as of May,
+
+59
+00:03:45,399 --> 00:03:48,308
+the price and a third trailer had not been revealed.
+
+60
+00:03:48,308 --> 00:03:51,160
+The price has since appeared in pre-order listings.
+
+61
+00:03:52,460 --> 00:03:54,700
+So what do we actually know for sure?
+
+62
+00:03:54,920 --> 00:03:57,976
+Let us separate confirmed facts from open questions.
+
+63
+00:03:59,276 --> 00:04:03,356
+Confirmed: the release date is November 19, 2026.
+
+64
+00:04:03,576 --> 00:04:08,728
+Confirmed: the launch platforms are PS5 and Xbox Series X|S.
+
+65
+00:04:08,948 --> 00:04:12,181
+And according to a report from the September shareholder meeting,
+
+66
+00:04:12,181 --> 00:04:14,916
+the game ships as a single-player experience at launch.
+
+67
+00:04:16,216 --> 00:04:17,752
+Now the open questions.
+
+68
+00:04:17,972 --> 00:04:20,372
+There is no announced date for a PC version.
+
+69
+00:04:20,592 --> 00:04:23,520
+Rockstar has not announced a schedule for an online mode.
+
+70
+00:04:23,740 --> 00:04:26,218
+There are no signs of a Switch 2 version,
+
+71
+00:04:26,218 --> 00:04:30,508
+and no known plans for subscription services like Game Pass or PS Plus.
+
+72
+00:04:30,728 --> 00:04:33,368
+Any specific date you see for these is a guess.
+
+73
+00:04:34,668 --> 00:04:38,924
+One more detail I could not confirm is the exact launch time in your region.
+
+74
+00:04:39,144 --> 00:04:44,344
+Release times can differ by platform and country, so check your store page closer to launch.
+
+75
+00:04:45,644 --> 00:04:46,988
+Next, the money.
+
+76
+00:04:47,208 --> 00:04:50,952
+Console pre-orders opened on June 25, 2026.
+
+77
+00:04:52,252 --> 00:04:56,972
+In the US, the Standard Edition is listed at $79.99.
+
+78
+00:04:57,192 --> 00:05:01,128
+The Ultimate Edition is listed at $99.99.
+
+79
+00:05:01,348 --> 00:05:05,011
+That is exactly $20 more, for exclusive vehicles, weapons,
+
+80
+00:05:05,011 --> 00:05:08,420
+apparel, and missions, according to the store listing.
+
+81
+00:05:09,720 --> 00:05:11,192
+Prices vary by region.
+
+82
+00:05:11,412 --> 00:05:16,530
+The Standard Edition is listed at £69.99 in the UK,
+
+83
+00:05:16,530 --> 00:05:21,045
+€79.99 in Europe, and AU$129.95 in Australia.
+
+84
+00:05:21,265 --> 00:05:23,809
+Always check your own store before you buy.
+
+85
+00:05:25,109 --> 00:05:27,173
+Pre-order extras are worth knowing about.
+
+86
+00:05:27,393 --> 00:05:32,193
+Retailers list a Vintage Vice City Pack for orders placed before November 20.
+
+87
+00:05:32,413 --> 00:05:36,061
+Digital pre-orders also list a free month of GTA+.
+
+88
+00:05:36,281 --> 00:05:41,369
+These details come from store and press listings, so confirm them on the page where you buy.
+
+89
+00:05:42,669 --> 00:05:45,106
+Digital or physical? One report says physical
+
+90
+00:05:45,106 --> 00:05:47,869
+editions contain a download code instead of a disc.
+
+91
+00:05:48,089 --> 00:05:52,425
+Treat that as a single-source detail, and check the box description before you buy.
+
+92
+00:05:52,645 --> 00:05:57,493
+Digital pre-orders can be pre-loaded, so you can be ready the moment launch day arrives.
+
+93
+00:05:58,793 --> 00:06:02,633
+One warning: fake pre-order listings have circulated online.
+
+94
+00:06:02,853 --> 00:06:05,749
+Stick to official console stores and trusted retailers,
+
+95
+00:06:05,749 --> 00:06:08,645
+and be wary of any deal that looks too good to be true.
+
+96
+00:06:09,945 --> 00:06:12,345
+Now let us put the key dates on your calendar.
+
+97
+00:06:13,645 --> 00:06:15,261
+Today is October 19.
+
+98
+00:06:15,481 --> 00:06:19,912
+On November 9, Take-Two reports quarterly earnings at 4:30 p.m. Eastern,
+
+99
+00:06:19,912 --> 00:06:22,313
+the last investor update before launch.
+
+100
+00:06:22,533 --> 00:06:27,685
+On November 12, digital pre-loads begin, and physical editions are reported to arrive.
+
+101
+00:06:27,905 --> 00:06:31,441
+And on November 19, GTA 6 launches.
+
+102
+00:06:32,741 --> 00:06:34,645
+A quick note on that earnings call.
+
+103
+00:06:34,865 --> 00:06:39,617
+The quarter it covers ended September 30, so it will not include any launch sales.
+
+104
+00:06:39,837 --> 00:06:44,973
+Real sales figures should show up in the next report, expected in early 2027.
+
+105
+00:06:45,193 --> 00:06:49,273
+So the November 9 call is more about updates and tone than sales numbers.
+
+106
+00:06:50,573 --> 00:06:51,677
+Pre-loading matters.
+
+107
+00:06:51,897 --> 00:06:54,495
+It means the game files download before launch,
+
+108
+00:06:54,495 --> 00:06:57,369
+so on November 19 you press play instead of waiting.
+
+109
+00:06:57,589 --> 00:07:01,669
+Pre-loads are reported to begin on November 12, one week early.
+
+110
+00:07:01,889 --> 00:07:06,785
+Check your free storage now, because a modern open-world game can need a large download.
+
+111
+00:07:08,085 --> 00:07:10,549
+Rumors spread fast around a launch this big.
+
+112
+00:07:11,849 --> 00:07:14,009
+Here is a real example from this year.
+
+113
+00:07:14,229 --> 00:07:16,258
+In the week before the May earnings call,
+
+114
+00:07:16,258 --> 00:07:20,565
+a retailer page appeared to leak a pre-order date, but that turned out to be a mistake.
+
+115
+00:07:20,785 --> 00:07:26,433
+An anonymous forum post then claimed a delay to February 2027, which had no credibility.
+
+116
+00:07:26,653 --> 00:07:29,837
+Then the CEO confirmed November 19 on the call.
+
+117
+00:07:31,137 --> 00:07:35,089
+Here is a simple three-step filter for any GTA 6 headline.
+
+118
+00:07:35,309 --> 00:07:39,949
+One: does it come from Rockstar, Take-Two, or an official store page?
+
+119
+00:07:40,169 --> 00:07:43,401
+Two: does the claim name a source, a date, and a number?
+
+120
+00:07:43,621 --> 00:07:47,749
+Three: does the outlet say confirmed, or does it say reportedly?
+
+121
+00:07:47,969 --> 00:07:51,361
+If a claim fails these tests, treat it as a rumor and wait.
+
+122
+00:07:52,661 --> 00:07:53,941
+Now, how to get ready.
+
+123
+00:07:55,241 --> 00:07:57,193
+Here is your launch-week checklist.
+
+124
+00:07:57,413 --> 00:08:00,421
+Free up console storage so pre-load is never blocked.
+
+125
+00:08:00,641 --> 00:08:04,465
+Update your console and check your internet connection before November 12.
+
+126
+00:08:04,685 --> 00:08:08,861
+Decide on a budget, and whether the Ultimate Edition extras matter to you.
+
+127
+00:08:09,081 --> 00:08:12,249
+Buy only from official stores and trusted retailers.
+
+128
+00:08:12,469 --> 00:08:16,677
+And protect yourself from spoilers, because leaks spread fast around launch.
+
+129
+00:08:17,977 --> 00:08:19,753
+Not sure which edition to pick?
+
+130
+00:08:19,973 --> 00:08:23,893
+If you mainly want the game, the Standard Edition is the base purchase.
+
+131
+00:08:24,113 --> 00:08:27,278
+If you want the extra vehicles, weapons, apparel,
+
+132
+00:08:27,278 --> 00:08:31,025
+and missions, the Ultimate Edition adds them for $20 more.
+
+133
+00:08:31,245 --> 00:08:34,493
+Either way, there is no need to rush into a decision this week.
+
+134
+00:08:35,793 --> 00:08:38,129
+Should you buy at launch or wait for reviews?
+
+135
+00:08:38,349 --> 00:08:41,198
+It is a personal call. Many players buy on day one,
+
+136
+00:08:41,198 --> 00:08:44,829
+while others prefer to see reviews and performance reports first.
+
+137
+00:08:45,049 --> 00:08:48,969
+I have not seen an official review date announced, so watch for official word.
+
+138
+00:08:50,269 --> 00:08:52,781
+What should you watch over the next 31 days?
+
+139
+00:08:54,081 --> 00:08:55,521
+Watch these three things.
+
+140
+00:08:55,741 --> 00:08:58,365
+November 9: Take-Two's earnings call.
+
+141
+00:08:58,585 --> 00:09:00,745
+November 12: the pre-load start.
+
+142
+00:09:00,965 --> 00:09:03,823
+And any official word from Rockstar on launch-day details,
+
+143
+00:09:03,823 --> 00:09:06,533
+which is the only place to trust for new announcements.
+
+144
+00:09:07,833 --> 00:09:08,633
+Quick recap.
+
+145
+00:09:08,853 --> 00:09:15,845
+GTA 6 launches November 19, 2026 on PS5 and Xbox Series X|S.
+
+146
+00:09:16,065 --> 00:09:18,849
+The launch trailer arrived October 15.
+
+147
+00:09:19,069 --> 00:09:24,365
+Pre-orders are open, with a US Standard price of $79.99.
+
+148
+00:09:24,585 --> 00:09:26,985
+PC and online have no announced dates.
+
+149
+00:09:27,205 --> 00:09:30,117
+And pre-load starts November 12, reportedly.
+
+150
+00:09:31,417 --> 00:09:33,145
+That is your 31-day briefing.
+
+151
+00:09:33,365 --> 00:09:36,012
+If it helped, follow for the next daily explainer,
+
+152
+00:09:36,012 --> 00:09:39,189
+and tell me in the comments what you are most excited about.
+
+153
+00:09:39,409 --> 00:09:42,577
+Details can change, so always check official sources.
+
+154
+00:09:42,797 --> 00:09:45,200
+This video is an independent explainer and is
+
+155
+00:09:45,200 --> 00:09:47,709
+not affiliated with Rockstar Games or Take-Two.
+

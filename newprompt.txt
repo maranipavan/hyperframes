@@ -1,0 +1,129 @@
+# Task: Make HyperFrames Video Rendering Significantly Faster
+
+Act as a senior Rust performance engineer and video-rendering systems architect. Work directly on my existing HyperFrames source repository on my Oracle VPS.
+
+**Repository:** `/home/ubuntu/hyperframes-main`
+
+**Hardware:** Oracle VPS, ARM64, 4 CPUs, 24 GB RAM, Ubuntu.
+
+**Available tools:** Node.js v22.23.3, Rust/Cargo, FFmpeg, and Chrome Headless Shell at:
+
+`/home/ubuntu/.cache/ms-playwright/chromium_headless_shell-1228/chrome-linux/headless_shell`
+
+## Current situation
+
+I have already implemented an initial Rust native alpha-blit kernel.
+
+My measured benchmark for 1920×1080 HLG compositing is:
+
+- TypeScript median: 109.49 ms
+- Rust through N-API median: 25.29 ms
+- Speedup: approximately 4.33×
+- Both implementations produce the same checksum.
+
+However, I have not proved that this optimization improves the total time required to render a complete video.
+
+My example workload is a 10-minute, 1920×1080 video at 30 FPS, containing 18,000 frames and two audio tracks.
+
+## Your mission
+
+Do not simply explain how to improve performance. Inspect the actual repository, execute profiling and benchmarks, modify the implementation where justified, and prove the results.
+
+### 1. Establish the real baseline
+
+Inspect the repository, Rust migration plan, benchmark documentation, CLI, producer, engine, browser-capture implementation, and FFmpeg pipeline.
+
+Determine whether commands execute the local modified source or the published npm package. Do not benchmark an unrelated published version and claim it measures local changes.
+
+Use a short representative composition first, then benchmark the full video.
+
+Measure:
+- Total rendering wall-clock time.
+- Time spent in each pipeline stage.
+- Browser frame-capture throughput.
+- CPU utilization and peak RAM.
+- Frame rate, output resolution, video duration and file size.
+- Audio/video synchronization and output correctness.
+
+### 2. Identify the actual bottleneck
+
+Use profiling and stage-level timing to determine what consumes the most rendering time.
+
+Investigate Chromium capture, screenshot overhead, browser layout and animations, image processing, compositing, JavaScript execution, native calls, memory allocation, audio processing, FFmpeg encoding, worker coordination and disk I/O.
+
+Do not assume any component is responsible without measurement.
+
+Check whether Chrome Headless Shell is actually being used and whether the renderer successfully engages its optimized `beginFrame` capture path instead of falling back to screenshots.
+
+### 3. Optimize the parts that matter
+
+Prioritize optimizations based on their measured contribution to total export time.
+
+Use Rust for CPU-intensive operations where native execution provides a demonstrable benefit. Investigate efficient pixel processing, compositing, buffer handling, batching, parallelism and memory-copy reduction.
+
+Preserve existing functionality. Do not rewrite everything in Rust merely to change programming languages. Retain TypeScript fallbacks where needed.
+
+Use bounded parallelism appropriate for a four-CPU VPS. Avoid excessive browser workers, memory thrashing, quality degradation or unnecessary intermediate files.
+
+### 4. Prove that Rust is executing
+
+Instrument the actual render path where needed.
+
+Report:
+- Whether the native Rust module loaded.
+- Which native functions were invoked during rendering.
+- How many native calls occurred.
+- Time spent in native functions.
+- Time spent in fallback implementations.
+- Which optimizations were actually exercised by the selected composition.
+
+A successful Rust build or module-loading test does not prove that a complete video render uses Rust.
+
+If the current composition does not exercise the alpha-blit operation, choose an appropriate test workload and separately measure real-world export performance.
+
+### 5. Benchmark before and after
+
+Compare the original implementation against the optimized local implementation using the same composition, assets, browser, output settings and hardware.
+
+Run at least three measured runs when practical, and report median times and variation.
+
+Verify that both outputs have equivalent duration, frame count, resolution, frame rate, image quality and audio synchronization.
+
+Calculate:
+
+`Speedup = baseline median render time / optimized median render time`
+
+`Time reduction (%) = 100 × (1 - optimized time / baseline time)`
+
+`Real-time factor = output duration / render wall-clock time`
+
+Clearly separate isolated kernel improvements from end-to-end rendering improvements.
+
+### 6. Make the changes
+
+After collecting the baseline, implement the highest-impact optimizations in the real repository.
+
+Create a recoverable backup or patch before editing. Preserve existing source files, project assets and the working Studio preview. Run relevant tests and builds after each significant change.
+
+Use the project's actual build system. Verify that benchmarks run the changed local implementation, not a published package that ignores local modifications.
+
+Do not invent results. If an optimization fails to improve total rendering time, investigate the reason and prioritize a better bottleneck.
+
+### 7. Required final report
+
+Provide:
+1. Original and optimized full-video rendering times.
+2. Speedup and percentage reduction in total export time.
+3. Stage-by-stage timing before and after.
+4. CPU usage and peak memory.
+5. Exact Rust functions executed during the export.
+6. Benchmark commands and configuration.
+7. Correctness test results.
+8. Every modified source file.
+9. Remaining bottlenecks and the next optimization to implement.
+
+Label anything not measured as unmeasured.
+
+**Ultimate objective:** make the complete HyperFrames video-rendering pipeline significantly faster on this four-CPU ARM64 VPS, while maintaining output correctness and reliability. Focus on actual export speed, not isolated benchmark numbers.
+
+Start by inspecting the current repository and establishing a reproducible baseline. Then implement, test, measure and iterate until the available evidence shows which changes improve end-to-end rendering.

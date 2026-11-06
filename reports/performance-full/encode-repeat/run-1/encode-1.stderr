@@ -1,0 +1,34 @@
+[rawvideo @ 0xc7efaa275c00] Estimating duration from bitrate, this may be inaccurate
+Input #0, rawvideo, from 'reports/performance-full/encode-repeat/run-1/fixed-840-899.yuv':
+  Duration: 00:00:02.00, start: 0.000000, bitrate: 746496 kb/s
+  Stream #0:0: Video: rawvideo (I420 / 0x30323449), yuv420p, 1920x1080, 746496 kb/s, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (rawvideo (native) -> h264 (libx264))
+[swscaler @ 0xf5c57c021080] No accelerated colorspace conversion found from yuv420p to bgr24.
+[swscaler @ 0xf5c57c021080] [swscaler @ 0xf5c57c03fd20] No accelerated colorspace conversion found from yuv420p to bgr24.
+[swscaler @ 0xf5c57c021080] [swscaler @ 0xf5c57c04f3d0] No accelerated colorspace conversion found from yuv420p to bgr24.
+[swscaler @ 0xf5c57c021080] [swscaler @ 0xf5c57c05ea80] No accelerated colorspace conversion found from yuv420p to bgr24.
+[swscaler @ 0xf5c57c021080] [swscaler @ 0xf5c57c06e130] No accelerated colorspace conversion found from yuv420p to bgr24.
+[swscaler @ 0xf5c57c021080] [swscaler @ 0xf5c57c07d7e0] No accelerated colorspace conversion found from yuv420p to bgr24.
+[libx264 @ 0xc7efaa2807e0] using SAR=1/1
+[libx264 @ 0xc7efaa2807e0] using cpu capabilities: ARMv8 NEON DotProd
+[libx264 @ 0xc7efaa2807e0] profile Constrained Baseline, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0xc7efaa2807e0] 264 - core 165 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=0 ref=1 deblock=0:0:0 analyse=0:0 me=dia subme=0 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=0 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=6 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=0 weightp=0 keyint=250 keyint_min=25 scenecut=0 intra_refresh=0 rc=crf mbtree=0 crf=28.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=3:1.00
+Output #0, mp4, to 'reports/performance-full/encode-repeat/run-1/repeat-1.mp4':
+  Metadata:
+    encoder         : Lavf62.3.101
+  Stream #0:0: Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 30 fps, 90k tbn
+    Metadata:
+      encoder         : Lavc62.11.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+[out#0/mp4 @ 0xc7efaa27fd90] video:288KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.371213%
+frame=   60 fps=0.0 q=-1.0 Lsize=     289KiB time=00:00:02.00 bitrate=1185.4kbits/s speed=4.92x elapsed=0:00:00.40    
+[libx264 @ 0xc7efaa2807e0] frame I:1     Avg QP: 7.82  size: 25536
+[libx264 @ 0xc7efaa2807e0] frame P:59    Avg QP:15.22  size:  4561
+[libx264 @ 0xc7efaa2807e0] mb I  I16..4: 100.0%  0.0%  0.0%
+[libx264 @ 0xc7efaa2807e0] mb P  I16..4:  8.8%  0.0%  0.0%  P16..4:  3.5%  0.0%  0.0%  0.0%  0.0%    skip:87.7%
+[libx264 @ 0xc7efaa2807e0] coded y,uvDC,uvAC intra: 4.3% 3.5% 1.0% inter: 1.4% 0.7% 0.2%
+[libx264 @ 0xc7efaa2807e0] i16 v,h,dc,p: 88%  8%  3%  1%
+[libx264 @ 0xc7efaa2807e0] i8c dc,h,v,p: 61%  4% 35%  0%
+[libx264 @ 0xc7efaa2807e0] kb/s:1178.63

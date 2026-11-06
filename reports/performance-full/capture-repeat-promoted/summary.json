@@ -1,0 +1,231 @@
+{
+  "compiled": "packages/.debug/34924e85-649b-4baa-867b-834a88350af2/compiled",
+  "compiledSha256": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+  "start": 830,
+  "end": 870,
+  "preRollStart": 830,
+  "mode": "promoted",
+  "browsers": [
+    "Chrome/155.0.8059.79",
+    "Chrome/155.0.8059.79"
+  ],
+  "format": "png",
+  "captureMode": "screenshot",
+  "note": "No encoder; fresh browsers, frozen compiled HTML. PNG alpha capture and diagnostic state reads differ from streaming JPEG production.",
+  "differingFrames": [
+    845
+  ],
+  "differingStateFrames": [],
+  "comparisons": [
+    {
+      "frame": 830,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 831,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 832,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 833,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 834,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 835,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 836,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 837,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 838,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 839,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 840,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 841,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 842,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 843,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 844,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 845,
+      "pixelsEqual": false,
+      "stateEqual": true,
+      "changedPixels": 7021,
+      "maxChannelError": 78,
+      "mse": 1.4801448366769547,
+      "bounds": {
+        "left": 192,
+        "top": 353,
+        "right": 567,
+        "bottom": 642
+      },
+      "psnr": 46.427761463567954
+    },
+    {
+      "frame": 846,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 847,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 848,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 849,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 850,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 851,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 852,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 853,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 854,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 855,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 856,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 857,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 858,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 859,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 860,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 861,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 862,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 863,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 864,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 865,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 866,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 867,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 868,
+      "pixelsEqual": true,
+      "stateEqual": true
+    },
+    {
+      "frame": 869,
+      "pixelsEqual": true,
+      "stateEqual": true
+    }
+  ]
+}

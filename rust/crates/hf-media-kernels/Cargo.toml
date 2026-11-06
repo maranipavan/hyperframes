@@ -1,0 +1,13 @@
+[package]
+name = "hf-media-kernels"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "bench-alpha-blit"
+path = "src/bin/bench-alpha-blit.rs"

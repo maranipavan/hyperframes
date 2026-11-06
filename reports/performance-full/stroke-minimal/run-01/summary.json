@@ -1,0 +1,265 @@
+{
+  "status": "completed",
+  "elapsedSeconds": 27.622425913000004,
+  "sourcesUnchanged": true,
+  "cases": [
+    {
+      "id": "plain-no-hint-1",
+      "history": "plain",
+      "hintOnScalingParent": false,
+      "repeat": 1,
+      "samples": 12,
+      "uniqueRgba": 1,
+      "uniqueDomStates": 1,
+      "temporalPixelDrift": false,
+      "fixedStateDrift": false,
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hashes": [
+        "6b2e50929054ee7799a6efe458710031ac1550b2bb4f2940575e7e29f1a951b9"
+      ]
+    },
+    {
+      "id": "plain-parent-hint-1",
+      "history": "plain",
+      "hintOnScalingParent": true,
+      "repeat": 1,
+      "samples": 12,
+      "uniqueRgba": 1,
+      "uniqueDomStates": 1,
+      "temporalPixelDrift": false,
+      "fixedStateDrift": false,
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hashes": [
+        "9c9e7b34d54f207ce70ae6c105d1f2c5559a0e5e7fa275d112ef7f5373385f9e"
+      ]
+    },
+    {
+      "id": "plain-no-hint-2",
+      "history": "plain",
+      "hintOnScalingParent": false,
+      "repeat": 2,
+      "samples": 12,
+      "uniqueRgba": 1,
+      "uniqueDomStates": 1,
+      "temporalPixelDrift": false,
+      "fixedStateDrift": false,
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hashes": [
+        "6b2e50929054ee7799a6efe458710031ac1550b2bb4f2940575e7e29f1a951b9"
+      ]
+    },
+    {
+      "id": "plain-parent-hint-2",
+      "history": "plain",
+      "hintOnScalingParent": true,
+      "repeat": 2,
+      "samples": 12,
+      "uniqueRgba": 1,
+      "uniqueDomStates": 1,
+      "temporalPixelDrift": false,
+      "fixedStateDrift": false,
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hashes": [
+        "9c9e7b34d54f207ce70ae6c105d1f2c5559a0e5e7fa275d112ef7f5373385f9e"
+      ]
+    },
+    {
+      "id": "preroll-no-hint-1",
+      "history": "preroll",
+      "hintOnScalingParent": false,
+      "repeat": 1,
+      "samples": 12,
+      "uniqueRgba": 1,
+      "uniqueDomStates": 1,
+      "temporalPixelDrift": false,
+      "fixedStateDrift": false,
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hashes": [
+        "9a7efc1086f18c214a356b845b39e1619229669d6212adf7ed80acc6632ba1a1"
+      ]
+    },
+    {
+      "id": "preroll-parent-hint-1",
+      "history": "preroll",
+      "hintOnScalingParent": true,
+      "repeat": 1,
+      "samples": 12,
+      "uniqueRgba": 1,
+      "uniqueDomStates": 1,
+      "temporalPixelDrift": false,
+      "fixedStateDrift": false,
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hashes": [
+        "9507b14c4b1943a48ea460e387a3bce896d5c7445c26733b7f14454bb491b36c"
+      ]
+    },
+    {
+      "id": "preroll-no-hint-2",
+      "history": "preroll",
+      "hintOnScalingParent": false,
+      "repeat": 2,
+      "samples": 12,
+      "uniqueRgba": 1,
+      "uniqueDomStates": 1,
+      "temporalPixelDrift": false,
+      "fixedStateDrift": false,
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hashes": [
+        "9a7efc1086f18c214a356b845b39e1619229669d6212adf7ed80acc6632ba1a1"
+      ]
+    },
+    {
+      "id": "preroll-parent-hint-2",
+      "history": "preroll",
+      "hintOnScalingParent": true,
+      "repeat": 2,
+      "samples": 12,
+      "uniqueRgba": 1,
+      "uniqueDomStates": 1,
+      "temporalPixelDrift": false,
+      "fixedStateDrift": false,
+      "sequence": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hashes": [
+        "9507b14c4b1943a48ea460e387a3bce896d5c7445c26733b7f14454bb491b36c"
+      ]
+    }
+  ],
+  "reproducedFixedStateDrift": false,
+  "crossBrowser": [
+    {
+      "history": "plain",
+      "hint": false,
+      "repeats": 2,
+      "uniqueRgbaAcrossBrowsers": 1
+    },
+    {
+      "history": "plain",
+      "hint": true,
+      "repeats": 2,
+      "uniqueRgbaAcrossBrowsers": 1
+    },
+    {
+      "history": "preroll",
+      "hint": false,
+      "repeats": 2,
+      "uniqueRgbaAcrossBrowsers": 1
+    },
+    {
+      "history": "preroll",
+      "hint": true,
+      "repeats": 2,
+      "uniqueRgbaAcrossBrowsers": 1
+    }
+  ],
+  "caveats": [
+    "Negative result does not disprove original temporal drift; original PNGs verified separately without running the original scene.",
+    "Reduced page removes sibling paint, gradients, wipe, full layer tree, framework seeks and render scheduling. Pre-roll matches target style history, not full compositor history.",
+    "No scene clock exists: heldSeconds is a reference label. Wall/browser times advance and are recorded separately from DOM state.",
+    "State reads, font readiness checks, decoding and file writes affect capture spacing. This is a bounded diagnostic, not a production benchmark or a fix recommendation.",
+    "Will-change is an experimental hint on the scaling parent only; equal stability in both arms cannot establish a benefit."
+  ]
+}

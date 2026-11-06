@@ -1,0 +1,9 @@
+--- reports/performance-full/repro/texture/index.html
++++ reports/performance-full/texture-stability-full/index.html
+@@ -618,5 +618,6 @@
+       tl.seek(0);
+     </script>
+   </div>
++<script src="./capture-stability.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,14 @@
+{
+  "aPath": "reports/performance-full/capture-repeat-held-listener",
+  "bPath": "reports/performance-full/capture-repeat-held-listener-back",
+  "comparedFrames": 1,
+  "results": [
+    {
+      "frame": 845,
+      "pixelsEqual": true,
+      "stateEqual": true
+    }
+  ],
+  "gatePassed": true,
+  "note": "Compares recorded RGBA/state hashes of repeat-1 over shared absolute frames; verify each input separately."
+}

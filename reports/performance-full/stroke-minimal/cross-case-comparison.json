@@ -1,0 +1,41 @@
+{
+  "method": "Offline decoded RGBA comparison of retained sample-00.png files; all other samples in each case were byte-identical in RGBA. No additional browser run.",
+  "comparisons": [
+    {
+      "a": "reports/performance-full/stroke-minimal/run-01/plain-no-hint-1/sample-00.png",
+      "b": "reports/performance-full/stroke-minimal/run-01/plain-parent-hint-1/sample-00.png",
+      "stateEqual": false,
+      "changedPixels": 7511,
+      "maxChannelError": 25,
+      "mseRgba": 0.004924647955246914,
+      "bounds": { "left": 193, "top": 354, "right": 567, "bottom": 641 }
+    },
+    {
+      "a": "reports/performance-full/stroke-minimal/run-01/preroll-no-hint-1/sample-00.png",
+      "b": "reports/performance-full/stroke-minimal/run-01/preroll-parent-hint-1/sample-00.png",
+      "stateEqual": false,
+      "changedPixels": 10637,
+      "maxChannelError": 78,
+      "mseRgba": 1.2456438078703704,
+      "bounds": { "left": 192, "top": 353, "right": 567, "bottom": 642 }
+    },
+    {
+      "a": "reports/performance-full/stroke-minimal/run-01/plain-no-hint-1/sample-00.png",
+      "b": "reports/performance-full/stroke-minimal/run-01/preroll-no-hint-1/sample-00.png",
+      "stateEqual": true,
+      "changedPixels": 5135,
+      "maxChannelError": 78,
+      "mseRgba": 1.2078023726851852,
+      "bounds": { "left": 193, "top": 353, "right": 567, "bottom": 641 }
+    },
+    {
+      "a": "reports/performance-full/stroke-minimal/run-01/plain-parent-hint-1/sample-00.png",
+      "b": "reports/performance-full/stroke-minimal/run-01/preroll-parent-hint-1/sample-00.png",
+      "stateEqual": true,
+      "changedPixels": 7542,
+      "maxChannelError": 22,
+      "mseRgba": 0.02547948013117284,
+      "bounds": { "left": 192, "top": 354, "right": 567, "bottom": 642 }
+    }
+  ]
+}

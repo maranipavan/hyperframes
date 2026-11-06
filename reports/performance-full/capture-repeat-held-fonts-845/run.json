@@ -1,0 +1,19 @@
+{
+  "args": [
+    "run",
+    "reports/performance-full/capture-repeat-held-fonts-845",
+    "845",
+    "857",
+    "830",
+    "hold-fonts"
+  ],
+  "compiledSha256": "62c57da84b4a1582fcffb95412e35caa827d1c8642b576546a8d0f1253c83888",
+  "scriptSha256": "b97869997ba3c6554cc71f60264c8fe15c3b53bb3bd0c6654f5c70fdcb6c43bb",
+  "browserExecutable": "/usr/bin/chromium",
+  "start": 845,
+  "end": 857,
+  "preRollStart": 830,
+  "mode": "hold-fonts",
+  "format": "png",
+  "status": "started; summary.json required for a completed result"
+}
