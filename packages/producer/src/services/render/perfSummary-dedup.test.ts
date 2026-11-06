@@ -180,6 +180,40 @@ describe("buildRenderPerfSummary static-dedup aggregation", () => {
 });
 
 describe("buildRenderPerfSummary capture average attribution", () => {
+  it("reports frame-weighted worker timings and ignores sessions without captured frames", () => {
+    const summary = buildRenderPerfSummary(
+      baseInput([
+        perf({
+          frames: 100,
+          avgTotalMs: 100,
+          avgSeekMs: 20,
+          avgBeforeCaptureMs: 2,
+          avgScreenshotMs: 78,
+        }),
+        perf({
+          frames: 300,
+          avgTotalMs: 200,
+          avgSeekMs: 40,
+          avgBeforeCaptureMs: 6,
+          avgScreenshotMs: 154,
+        }),
+        perf({ frames: 0, avgTotalMs: 999 }),
+      ]),
+    );
+    expect(summary.captureTimings).toEqual({
+      sessions: 2,
+      capturedFrames: 400,
+      avgTotalMs: 175,
+      avgSeekMs: 35,
+      avgBeforeCaptureMs: 5,
+      avgScreenshotMs: 135,
+    });
+  });
+
+  it("omits worker timings when there are no captured frames", () => {
+    expect(buildRenderPerfSummary(baseInput([perf({ frames: 0 })])).captureTimings).toBeUndefined();
+  });
+
   it("uses frame-capture time for captureAvgMs instead of setup-inclusive captureMs", () => {
     const summary = buildRenderPerfSummary(
       baseInput([], {

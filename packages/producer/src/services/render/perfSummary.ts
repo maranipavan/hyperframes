@@ -20,6 +20,7 @@ import type {
 } from "../renderOrchestrator.js";
 import { type HdrPerfCollector, finalizeHdrPerf } from "./hdrPerf.js";
 import type { RenderObservabilitySummary } from "./observability.js";
+import { aggregateCaptureTimings } from "./captureTimings.js";
 
 /**
  * Worst sub-composition timeline wait outcome across sessions: script_failure
@@ -389,6 +390,7 @@ export function buildRenderPerfSummary(input: {
       if (withSamples.length === 0) return undefined;
       return withSamples.reduce((a, b) => (b.frames > a.frames ? b : a)).p50TotalMs;
     })(),
+    captureTimings: aggregateCaptureTimings(input.dedupPerfs),
     peakRssMb: Math.round(input.peakRssBytes / (1024 * 1024)),
     peakHeapUsedMb: Math.round(input.peakHeapUsedBytes / (1024 * 1024)),
     staticDedup: aggregateDedup(input.dedupPerfs),

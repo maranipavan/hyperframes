@@ -220,6 +220,7 @@ import {
 } from "./render/captureImageFormat.js";
 import { assertMotionBlurSupported } from "./render/motionBlurRoute.js";
 import { assertOutputScaleSupported } from "./render/outputScaleRoute.js";
+import { resolveX264PresetOverride } from "./render/x264Preset.js";
 
 export function sampleDirectoryBytes(dir: string): number {
   let total = 0;
@@ -495,6 +496,15 @@ export interface RenderPerfSummary {
    * captured the most frames when parallel workers report separately.
    */
   captureP50Ms?: number;
+  /** Per-captured-frame worker averages; parallel session time is not wall time. */
+  captureTimings?: {
+    sessions: number;
+    capturedFrames: number;
+    avgTotalMs: number;
+    avgSeekMs: number;
+    avgBeforeCaptureMs: number;
+    avgScreenshotMs: number;
+  };
   /** Worst sub-composition timeline wait outcome across sessions. */
   subTimelineWait?: SubTimelineWaitOutcome;
   capturePeakMs?: number;
@@ -4343,7 +4353,16 @@ async function executeRenderPipeline(input: {
     // are never written to ffmpeg in the png-sequence path.
     const presetFormat: "mp4" | "webm" | "mov" =
       outputFormat === "webm" || outputFormat === "mov" ? outputFormat : "mp4";
-    const preset = getEncoderPreset(job.config.quality, presetFormat, encoderHdr);
+    const basePreset = getEncoderPreset(job.config.quality, presetFormat, encoderHdr);
+    const x264Override = resolveX264PresetOverride(process.env.HYPERFRAMES_X264_PRESET, {
+      format: outputFormat,
+      codec: basePreset.codec,
+      useGpu: job.config.useGpu === true,
+    });
+    const preset = x264Override ? { ...basePreset, preset: x264Override } : basePreset;
+    if (x264Override) {
+      log.info(`[Render] Using opt-in software H.264 encoder preset: ${x264Override}`);
+    }
 
     // CLI overrides (--crf, --video-bitrate) flow through job.config and must
     // win over the preset-derived defaults. The CLI enforces mutual exclusivity

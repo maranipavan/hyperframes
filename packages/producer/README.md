@@ -92,6 +92,7 @@ await executeRenderJob(job);
 
 The producer captures Chrome screenshots with the page background forced transparent (`html, body, [data-composition-id] { background: transparent !important }`) and the CDP default background override set to RGBA 0,0,0,0. The captured PNGs carry a real alpha channel and that channel is preserved end-to-end:
 
+- For local software H.264 MP4 renders, `HYPERFRAMES_X264_PRESET=veryfast` opts into a faster x264 preset without changing capture JPEG quality or CRF. Supported values are x264 presets from `ultrafast` through `veryslow`; when unset, the quality profile's existing preset remains in use. Faster presets can change image quality and file size, so compare the output for your workload. This setting is not supported for GPU, HDR, HLS, other output formats, or distributed renders.
 - VP9 (`webm`) is encoded with `-pix_fmt yuva420p`, `-auto-alt-ref 0`, `-cpu-used 4` by default, and `alpha_mode=1` metadata. Tune the speed/quality tradeoff with `PRODUCER_VP9_CPU_USED` (`-8` to `8`) or local CLI `--vp9-cpu-used`.
 - ProRes 4444 (`mov`) is encoded with `-pix_fmt yuva444p10le`.
 - PNG sequences are written without re-encoding (zero-padded `frame_NNNNNN.png`).
