@@ -206,3 +206,7 @@ chrome/
 /reports/**/*.yuv
 /reports/**/*.mp3
 /reports/**/*.mp4
+
+# Generated performance capture images
+/reports/performance-full/capture-repeat-*/**/*.png
+/reports/performance-full/capture-full-chapter-*/**/*.png
